@@ -52,22 +52,22 @@ background-position: center center;
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="?home">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Gallery</a>
+        <a class="nav-link" href="?gallery">Gallery</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Biography</a>
+        <a class="nav-link" href="?biography">Biography</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Exhibitions</a>
+        <a class="nav-link" href="?exhibitions">Exhibitions</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Shop</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="?contact">Contact</a>
       </li>
     </ul>
   </div>
