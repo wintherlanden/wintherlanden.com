@@ -5,7 +5,8 @@ require_once('head.inc.php');
 
 
 $page = $_REQUEST['uri'];
-echo $page;
+echo json_encode($_REQUEST, JSON_PRETTY_PRINT);
+die;
 if ($page[0] == '/') {
     $page = substr($page, 1);
 }
