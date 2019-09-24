@@ -17,19 +17,9 @@ body {
   background-color: #f5f5f5;
 }
 
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-.container {
-  width: auto;
-  max-width: 680px;
-  padding: 0 15px;
-}
 </style>
 
-<footer>
+<footer class="footer">
   <div class="container-fluid text-center text-md-left">
     <div class="row">
       <hr class="clearfix w-100 d-md-none pb-3">
