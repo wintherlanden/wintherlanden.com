@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet">
 
 <style>
 body {
@@ -16,8 +16,7 @@ body {
 #    color: white;
 }
 h1, h2, h3, h4, p, body {
-    font-family: 'Montserrat', sans-serif;
-
+    font-family: 'Raleway', sans-serif;
 }
 #header_logo {
     height: 500px;
