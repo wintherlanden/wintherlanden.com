@@ -19,7 +19,7 @@ $categories = [
     <?php
     foreach ($categories as $title)
     {
-        $images = scandir("images/" . $title);
+        $images = scandir("gallery/" . $title);
         $image_front = null;
         $images_gallery = [];
         foreach ($images as $image)
@@ -30,9 +30,9 @@ $categories = [
                 $images_gallery[] = $image;
         }
         ?>
-        <div class="col-md-2">
-            <a href="images/" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+        <div class="col-sm-2">
+            <a href="gallery/<?=$title;?>/<?=$image_front;?>" data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="gallery/<?=$title;?>/<?=$image_front;?>" class="img-fluid">
             </a>
         </div>
 
