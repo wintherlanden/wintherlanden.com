@@ -25,6 +25,8 @@ h1, h2, h3, h4, p, body {
   </head>
   <body>
 
+<div class="container">
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,3 +49,4 @@ h1, h2, h3, h4, p, body {
     </ul>
   </div>
 </nav>
+</div>
