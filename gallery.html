@@ -17,6 +17,10 @@ $categories = [
 {
     height: 212px;
 }
+.gallery row
+{
+    margin-bottom: 10px;
+}
 .nopad {
     padding-left: 0;
     padding-right: 0;
@@ -54,7 +58,7 @@ $categories = [
                 foreach ($images_gallery as $image)
                 {
                     ?>
-                    <a href="gallery/<?=$name;?>/<?=$image;?>" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3 nopas">
+                    <a href="gallery/<?=$name;?>/<?=$image;?>" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3 nopad">
                         <img src="gallery/<?=$name;?>/<?=$image;?>" class="img-fluid">
                     </a>
                     <?php
