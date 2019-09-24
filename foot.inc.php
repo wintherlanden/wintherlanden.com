@@ -1,3 +1,25 @@
+<footer class="page-footer font-small blue pt-4">
+  <div class="container-fluid text-center text-md-left">
+    <div class="row">
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <div class="col-md-3 mb-md-0 mb-3">
+      </div>
+
+      <div class="col-md-3 mb-md-0 mb-3">
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Datenschutz</a>
+          </li>
+          <li>
+            <a href="#!">Impressum</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
