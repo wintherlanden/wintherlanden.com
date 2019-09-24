@@ -15,7 +15,11 @@ $categories = [
 <style>
 .gallery img
 {
-#    height: 212px;
+    height: 212px;
+}
+.nopad {
+    padding-left: 0;
+    padding-right: 0;
 }
 </style>
 
@@ -40,17 +44,17 @@ $categories = [
         ?>
         <div class="row">
 
-            <div class="col-sm-2">
+            <div class="col-sm-2 nopad">
                 <a href="gallery/<?=$name;?>/<?=$image_front;?>" data-toggle="lightbox" data-gallery="example-gallery">
                     <img src="gallery/<?=$name;?>/<?=$image_front;?>" class="img-fluid">
                 </a>
             </div>
-            <div class="col-sm-10">
+            <div class="col-sm-10 nopad">
                 <?php
                 foreach ($images_gallery as $image)
                 {
                     ?>
-                    <a href="gallery/<?=$name;?>/<?=$image;?>" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <a href="gallery/<?=$name;?>/<?=$image;?>" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3 nopas">
                         <img src="gallery/<?=$name;?>/<?=$image;?>" class="img-fluid">
                     </a>
                     <?php
