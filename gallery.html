@@ -19,9 +19,21 @@ $categories = [
     <?php
     foreach ($categories as $title)
     {
+        $images = scandir("images/" . $title);
+        $image_front = null;
+        $images_gallery = [];
+        foreach ($images as $image)
+        {
+            if (strpos($image, "Front") !== false)
+                $image_front = $image;
+            else
+                $images_gallery[] = $image;
+        }
         ?>
         <div class="col-md-2">
-            <img 
+            <a href="images/" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+            </a>
         </div>
 
         <?php
