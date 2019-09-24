@@ -28,8 +28,11 @@ h1, h2, h3, h4, p, body {
    font-variant: small-caps;
    text-transform: uppercase;
 
-    color: #ffffff;
-    background: #858ca3;
+}
+.navbar li a {
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 </style>
 
