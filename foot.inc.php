@@ -22,6 +22,10 @@ body {
 .footer .text-muted {
   text-align: right;
 }
+.footer a {
+    color: rgba(0,0,0,.5);
+    margin-left: 20px;
+}
 </style>
 
 <footer class="footer">
@@ -29,7 +33,7 @@ body {
     <div class="row">
       <div class="col-sm-12">
         <div class="text-muted">
-          <a class="nav-link" href="?datenschutz">Datenschutz</a>
+          <a href="?datenschutz">Datenschutz</a>
           <a href="?impressum">Impressum</a>
         </div>
       </div>
