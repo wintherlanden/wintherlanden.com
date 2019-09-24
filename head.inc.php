@@ -23,6 +23,9 @@ h1, h2, h3, h4, p, body {
     height: 550px;
     background: url("images/cropped-Torso-1-1.jpg");
 }
+.navbar {
+   padding-left: 40vw;
+}
 </style>
 
     <title>Wintherlanden</title>
