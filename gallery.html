@@ -29,6 +29,9 @@ $categories = [
         $images_gallery = [];
         foreach ($images as $image)
         {
+            if ($image[0] == '.')
+                continue;
+
             if (strpos($image, "Front") !== false)
                 $image_front = $image;
             else
