@@ -19,13 +19,18 @@ h1, h2, h3, h4, p, body {
     font-family: 'Montserrat', sans-serif;
 
 }
+#header_logo {
+    height: 300px;
+    background: url(images/cropped-Torso-1-1.jpg);
+}
 </style>
 
     <title>Wintherlanden</title>
   </head>
   <body>
 
-<div class="container">
+<div id='header_logo'>
+</div>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
@@ -49,4 +54,4 @@ h1, h2, h3, h4, p, body {
     </ul>
   </div>
 </nav>
-</div>
+
