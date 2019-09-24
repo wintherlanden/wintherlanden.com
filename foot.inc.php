@@ -1,3 +1,6 @@
+<br>
+<br>
+
 <style>
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -26,7 +29,7 @@ body {
     <div class="row">
       <div class="col-sm-12">
         <div class="text-muted">
-          <a href="?datenschutz">Datenschutz</a>
+          <a class="nav-link" href="?datenschutz">Datenschutz</a>
           <a href="?impressum">Impressum</a>
         </div>
       </div>
