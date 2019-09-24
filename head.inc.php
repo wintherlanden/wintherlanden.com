@@ -25,6 +25,11 @@ h1, h2, h3, h4, p, body {
 }
 .navbar {
    padding-left: 40vw;
+   font-variant: small-caps;
+   text-transform: uppercase;
+
+    color: #ffffff;
+    background: #858ca3;
 }
 </style>
 
