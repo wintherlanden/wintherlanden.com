@@ -25,7 +25,7 @@ background-size: cover;
 background-position: center center;
 }
 .navbar {
-   padding-left: 40vw;
+   padding-left: 35vw;
    font-variant: small-caps;
    text-transform: uppercase;
 
@@ -71,4 +71,3 @@ background-position: center center;
     </ul>
   </div>
 </nav>
-
