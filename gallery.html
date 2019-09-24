@@ -35,6 +35,18 @@ $categories = [
                     <img src="gallery/<?=$title;?>/<?=$image_front;?>" class="img-fluid">
                 </a>
             </div>
+            <div class="col-sm-9">
+                <?php
+                foreach ($images_gallery as $image)
+                {
+                    ?>
+                    <a href="gallery/<?=$title;?>/<?=$image;?>" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="gallery/<?=$title;?>/<?=$image;?>" class="img-fluid">
+                    </a>
+                    <?php
+                }
+                ?>
+            </div>
 
         </div>
         <?php
