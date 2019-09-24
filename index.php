@@ -4,12 +4,8 @@
 require_once('head.inc.php');
 
 
-$page = $_REQUEST['uri'];
-if (!page) {
-    foreach ($_REQUEST as $k => $v) $page = $k;
-}
-echo var_dump($page);
-echo $page;die;
+foreach ($_REQUEST as $k => $v) $page = $k;
+#$page = $_REQUEST['uri'];
 if ($page[0] == '/') {
     $page = substr($page, 1);
 }
