@@ -20,8 +20,9 @@ h1, h2, h3, h4, p, body {
 
 }
 #header_logo {
-    height: 550px;
+    height: 450px;
     background: url("images/cropped-Torso-1-1.jpg");
+background-size: cover;
 }
 .navbar {
    padding-left: 40vw;
