@@ -22,19 +22,11 @@ body {
 <footer class="footer">
   <div class="container">
     <div class="row">
-
-      <div class="col-md-3 mb-md-0 mb-3">
-      </div>
-
-      <div class="col-md-3 mb-md-0 mb-3">
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Datenschutz</a>
-          </li>
-          <li>
-            <a href="#!">Impressum</a>
-          </li>
-        </ul>
+      <div class="col-sm-12">
+        <span class="text-muted">
+          <a href="?datenschutz">Datenschutz</a>
+          <a href="?impressum">Impressum</a>
+        </span>
       </div>
     </div>
   </div>
