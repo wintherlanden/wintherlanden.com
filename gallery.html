@@ -14,8 +14,6 @@ $categories = [
 
 <div class="container">
 
-    <div class="row">
-
     <?php
     foreach ($categories as $title)
     {
@@ -30,17 +28,19 @@ $categories = [
                 $images_gallery[] = $image;
         }
         ?>
-        <div class="col-sm-2">
-            <a href="gallery/<?=$title;?>/<?=$image_front;?>" data-toggle="lightbox" data-gallery="example-gallery">
-                <img src="gallery/<?=$title;?>/<?=$image_front;?>" class="img-fluid">
-            </a>
-        </div>
+        <div class="row">
 
+            <div class="col-sm-3">
+                <a href="gallery/<?=$title;?>/<?=$image_front;?>" data-toggle="lightbox" data-gallery="example-gallery">
+                    <img src="gallery/<?=$title;?>/<?=$image_front;?>" class="img-fluid">
+                </a>
+            </div>
+
+        </div>
         <?php
     }
     ?>
 
-    </div>
 
 
 </div>
