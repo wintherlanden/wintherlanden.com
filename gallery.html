@@ -2,11 +2,11 @@
 
 $categories = [
 
-    "Replica",
-    "Figure",
-    "Cast",
-    "Animals",
-    "Portrait",
+    "Replica" => "Replica",
+    "Figure" => "Figure",
+    "Cast" => "Cast",
+    "Animals" => "Animals",
+    "Portrait" => "Portrait",
 
 ];
 
@@ -15,9 +15,9 @@ $categories = [
 <div class="container">
 
     <?php
-    foreach ($categories as $title)
+    foreach ($categories as $name => $title)
     {
-        $images = scandir("gallery/" . $title);
+        $images = scandir("gallery/" . $name);
         $image_front = null;
         $images_gallery = [];
         foreach ($images as $image)
@@ -31,8 +31,8 @@ $categories = [
         <div class="row">
 
             <div class="col-sm-3">
-                <a href="gallery/<?=$title;?>/<?=$image_front;?>" data-toggle="lightbox" data-gallery="example-gallery">
-                    <img src="gallery/<?=$title;?>/<?=$image_front;?>" class="img-fluid">
+                <a href="gallery/<?=$name;?>/<?=$image_front;?>" data-toggle="lightbox" data-gallery="example-gallery">
+                    <img src="gallery/<?=$name;?>/<?=$image_front;?>" class="img-fluid">
                 </a>
             </div>
             <div class="col-sm-9">
@@ -40,8 +40,8 @@ $categories = [
                 foreach ($images_gallery as $image)
                 {
                     ?>
-                    <a href="gallery/<?=$title;?>/<?=$image;?>" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img src="gallery/<?=$title;?>/<?=$image;?>" class="img-fluid">
+                    <a href="gallery/<?=$name;?>/<?=$image;?>" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="gallery/<?=$name;?>/<?=$image;?>" class="img-fluid">
                     </a>
                     <?php
                 }
