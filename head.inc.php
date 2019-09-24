@@ -29,6 +29,9 @@ background-position: center center;
    font-variant: small-caps;
    text-transform: uppercase;
 
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
 }
 .navbar li a.nav-link {
     font-size: 15px;
@@ -71,3 +74,6 @@ background-position: center center;
     </ul>
   </div>
 </nav>
+
+<br>
+<br>
