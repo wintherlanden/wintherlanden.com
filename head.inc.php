@@ -58,19 +58,16 @@ background-position: center center;
       <li class="nav-item <?=($page=="home"?"active":"");?>">
         <a class="nav-link" href="?home">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?=($page=="gallery"?"active":"");?>">
         <a class="nav-link" href="?gallery">Gallery</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?=($page=="biography"?"active":"");?>">
         <a class="nav-link" href="?biography">Biography</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?=($page=="exhibitions"?"active":"");?>">
         <a class="nav-link" href="?exhibitions">Exhibitions</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Shop</a>
-      </li>
-      <li class="nav-item">
+      <li class="nav-item <?=($page=="contact"?"active":"");?>">
         <a class="nav-link" href="?contact">Contact</a>
       </li>
     </ul>
