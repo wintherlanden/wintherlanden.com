@@ -16,17 +16,19 @@ body {
   line-height: 60px; /* Vertically center the text there */
   background-color: #f5f5f5;
 }
-
+.footer .text-muted {
+  text-align: right;
+}
 </style>
 
 <footer class="footer">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <span class="text-muted">
+        <div class="text-muted">
           <a href="?datenschutz">Datenschutz</a>
           <a href="?impressum">Impressum</a>
-        </span>
+        </div>
       </div>
     </div>
   </div>
