@@ -21,6 +21,12 @@ $width = imagesx($source_image);
 $height = imagesy($source_image);
 $desired_height = floor($height * ($desired_width / $width));
 $virtual_image = imagecreatetruecolor($desired_width, $desired_height);
+
+imagealphablending($virtual_image, false);
+$colorTransparent = imagecolorallocatealpha($virtual_image, 0, 0, 0, 127);
+imagefill($virtual_image, 0, 0, $colorTransparent);
+imagesavealpha($virtual_image, true);
+
 imagecopyresampled($virtual_image, $source_image, 0, 0, 0, 0, $desired_width, $desired_height, $width, $height);
 imagepng($virtual_image, $dest);
 
