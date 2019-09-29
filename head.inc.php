@@ -34,7 +34,7 @@
         }
 
         .navbar {
-            background: rgba(255,255,255,0.78);
+            background: rgba(255,255,255,0.63);
             padding-left: 35vw;
             font-variant: small-caps;
             text-transform: uppercase;
@@ -55,7 +55,7 @@
         #header_bar {
             height: 38px;
             z-index: 99999;
-            background: #ffffffaa;
+            background: rgba(255,255,255,0.63);
         }
 
         #instagram_icon {
