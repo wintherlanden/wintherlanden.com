@@ -42,7 +42,7 @@ background-position: center center;
     font-weight: 600 !important;
 }
 #header_bar {
-    height: 40px;
+    height: 33px;
     z-index: 99999;
 
 }
