@@ -53,7 +53,7 @@ function load_instagram()
     }
 
     usort($instagram_edges, function ($a, $b) {
-       return $b->taken_at_timestamp - $a->taken_at_timestamp;
+        return $b->taken_at_timestamp - $a->taken_at_timestamp;
     });
 
     return $instagram_edges;
@@ -83,27 +83,29 @@ $instagram_edges = load_instagram();
 
 <div class="instagram">
 
-    <div class="row">
+    <div style="margin: 0px 10% 0 10%;">
+        <div class="row">
 
 
-        <?php
-        foreach ($instagram_edges as $instagram_edge) {
-            $shortcode = $instagram_edge->shortcode;
-            $edge_text = $instagram_edge->edge_media_to_caption->edges[0]->node->text;
+            <?php
+            foreach ($instagram_edges as $instagram_edge) {
+                $shortcode = $instagram_edge->shortcode;
+                $edge_text = $instagram_edge->edge_media_to_caption->edges[0]->node->text;
+                ?>
+
+                <div class="col-sm-4">
+
+                    <a href="https://www.instagram.com/p/<?= $shortcode; ?>" data-toggle="lightbox"
+                       data-gallery="example-gallery" data-type="instagram"
+                       class="nopad">
+                        <img src="<?= $instagram_edge->thumbnail_src; ?>" class="img-fluid">
+                    </a>
+                </div>
+                <?php
+            }
             ?>
 
-            <div class="col-sm-4">
-
-                <a href="https://www.instagram.com/p/<?= $shortcode; ?>" data-toggle="lightbox"
-                   data-gallery="example-gallery" data-type="instagram"
-                   class="nopad">
-                    <img src="<?= $instagram_edge->thumbnail_src; ?>" class="img-fluid">
-                </a>
-            </div>
-            <?php
-        }
-        ?>
-
+        </div>
     </div>
 
 
