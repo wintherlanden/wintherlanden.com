@@ -149,6 +149,9 @@
             <li class="nav-item <?= ($page == "exhibitions" ? "active" : ""); ?>">
                 <a class="nav-link" href="?exhibitions">Exhibitions</a>
             </li>
+            <li class="nav-item <?= ($page == "instagram" ? "active" : ""); ?>">
+                <a class="nav-link" href="?instagram">Instagram</a>
+            </li>
             <li class="nav-item <?= ($page == "contact" ? "active" : ""); ?>">
                 <a class="nav-link" href="?contact">Contact</a>
             </li>
