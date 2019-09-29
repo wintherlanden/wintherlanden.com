@@ -42,9 +42,15 @@ background-position: center center;
     font-weight: 600 !important;
 }
 #header_bar {
-    height: 33px;
+    height: 38px;
     z-index: 99999;
 
+}
+#language_icon {
+   height: 28px;
+   position: absolute;
+   top: 5px;
+   right: 5px;
 }
 </style>
 
@@ -53,7 +59,7 @@ background-position: center center;
   <body>
 
 <div id='header_bar'>
-  <img src="images/language-icon.png">
+  <img src="images/language-icon.png" id="language_icon">
 </div>
 
 <div id='header_logo'>
