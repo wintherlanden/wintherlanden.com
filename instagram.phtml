@@ -1,6 +1,8 @@
+<!--
 <center>
     <h1>Instagram</h1>
 </center>
+-->
 
 
 <?php
@@ -81,36 +83,37 @@ $instagram_edges = load_instagram();
     }
 
 
-
 </style>
 
 <div class="instagram">
 
-    <div class="col-xs-0 col-md-2">
-    </div>
-
-    <div class="col-xs-12 col-md-8">
     <div class="row">
+        <div class="col-xs-0 col-md-2">
+        </div>
+
+        <div class="col-xs-12 col-md-8">
+            <div class="row">
 
 
-            <?php
-            foreach ($instagram_edges as $instagram_edge) {
-                $shortcode = $instagram_edge->shortcode;
-                $edge_text = $instagram_edge->edge_media_to_caption->edges[0]->node->text;
+                <?php
+                foreach ($instagram_edges as $instagram_edge) {
+                    $shortcode = $instagram_edge->shortcode;
+                    $edge_text = $instagram_edge->edge_media_to_caption->edges[0]->node->text;
+                    ?>
+
+                    <div class="col-sm-4">
+
+                        <a href="https://www.instagram.com/p/<?= $shortcode; ?>" data-toggle="lightbox"
+                           data-gallery="example-gallery" data-type="instagram"
+                           class="nopad">
+                            <img src="<?= $instagram_edge->thumbnail_src; ?>" class="img-fluid">
+                        </a>
+                    </div>
+                    <?php
+                }
                 ?>
 
-                <div class="col-sm-4">
-
-                    <a href="https://www.instagram.com/p/<?= $shortcode; ?>" data-toggle="lightbox"
-                       data-gallery="example-gallery" data-type="instagram"
-                       class="nopad">
-                        <img src="<?= $instagram_edge->thumbnail_src; ?>" class="img-fluid">
-                    </a>
-                </div>
-                <?php
-            }
-            ?>
-
+            </div>
         </div>
     </div>
 
