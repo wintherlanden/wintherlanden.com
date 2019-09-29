@@ -34,7 +34,7 @@
             background-repeat: no-repeat;
         }
 
-        #navbarNav {
+        #navbarNavWrapper {
             width: 750px;
             margin: 0 auto;
         }
@@ -143,6 +143,7 @@ if (!$nolayout) {
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+    <div id="navbarNavWrapper">
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item <?= ($page == "home" ? "active" : ""); ?>">
@@ -164,6 +165,7 @@ if (!$nolayout) {
                 <a class="nav-link" href="?contact">Contact</a>
             </li>
         </ul>
+    </div>
     </div>
 </nav>
 
