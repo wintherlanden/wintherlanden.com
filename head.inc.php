@@ -58,13 +58,6 @@
             background: #ffffffaa;
         }
 
-        #language_icon {
-            height: 28px;
-            position: absolute;
-            top: 5px;
-            right: 5px;
-        }
-
         #instagram_icon {
             position: relative;
             left: 60px;
@@ -77,7 +70,17 @@
             padding: 10px 10px 10px 10px;
         }
 
-        .instagram_icon_holder {
+        #language_icon_holder {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+
+        #language_icon {
+            height: 28px;
+        }
+
+        #instagram_icon_holder {
             float: right;
         }
     </style>
@@ -87,10 +90,10 @@
 <body>
 
 <div id='header_bar'>
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <div id="language_icon_holder" class="dropdown">
+        <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <img src="images/language-icon.png" id="language_icon">
-        </button>
+        </div>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="#">English</a>
             <a class="dropdown-item" href="#">Deutsch</a>
@@ -133,6 +136,6 @@
 
 <div class="container main_container">
 
-    <div class="instagram_icon_holder">
+    <div id="instagram_icon_holder">
         <img src="images/instagram-icon.png" id="instagram_icon">
     </div>
