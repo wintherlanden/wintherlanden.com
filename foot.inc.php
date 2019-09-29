@@ -34,7 +34,7 @@ if (!$nolayout) {
     }
 
     .footer a {
-        color: rgba(0, 0, 0, .5);
+        color: rgba(255, 255, 255, 1);
         margin-left: 20px;
     }
 </style>
