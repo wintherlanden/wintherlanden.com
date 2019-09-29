@@ -100,6 +100,7 @@
 
         #image_welcome {
             width: 50%;
+            margin-bottom: 30px;
         }
         #image_signature {
             width: 30%;
