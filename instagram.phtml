@@ -8,9 +8,11 @@
 $instagram_html = file_get_contents('instagram.inc.php');
 
 $instagram_html = explode('window._sharedData =', $instagram_html)[1];
-$instagram_html = explode('</script', $instagram_html)[0];
+$instagram_html = explode(';</script', $instagram_html)[0];
 
 $json = json_decode($instagram_html);
+
+entry_data
 
 echo '<pre>' . json_encode($json, JSON_PRETTY_PRINT) . '</pre>';
 
