@@ -43,11 +43,13 @@ $categories = [
             if ($image[0] == '.')
                 continue;
 
-            if (strpos($image, "Front") !== false)
-                if ($image == 'Front' . $lang . '.png')
+            if (strpos($image, "Front") !== false) {
+                if (strpos($image, 'Front' . $lang . '.png') !== false) {
                     $image_front = $image;
-                else
-                    $images_gallery[] = $image;
+                }
+            } else {
+                $images_gallery[] = $image;
+            }
         }
         ?>
         <div class="row">
