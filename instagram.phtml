@@ -58,8 +58,7 @@ function load_instagram()
 store_instagram();
 $instagram_edges = load_instagram();
 
-
-echo '<pre>' . json_encode($instagram_edges, JSON_PRETTY_PRINT) . '</pre>';
+// echo '<pre>' . json_encode($instagram_edges, JSON_PRETTY_PRINT) . '</pre>';
 
 $categories = [
 
@@ -92,23 +91,24 @@ $categories = [
 
     <div class="row">
 
-        <div class="col-sm-12 nopad">
 
+        <?php
+        foreach ($instagram_edges as $instagram_edge) {
+            $shortcode = $instagram_edge->shortcode;
+            $edge_text = $instagram_edge->edge_media_to_caption->edges[0]->node->text;
+            ?>
 
-            <?php
-            foreach ($instagram_edges as $instagram_edge) {
-                $shortcode = $instagram_edge->shortcode;
-                $edge_text = $instagram_edge->edge_media_to_caption->edges[0]->node->text;
-                ?>
+            <div class="col-sm-3 nopad">
 
-                <a href="https://www.instagram.com/p/<?=$shortcode;?>" data-toggle="lightbox" data-gallery="example-gallery" data-type="instagram"
+                <a href="https://www.instagram.com/p/<?= $shortcode; ?>" data-toggle="lightbox"
+                   data-gallery="example-gallery" data-type="instagram"
                    class="col-sm-3 nopad">
                     <img src="<?= $instagram_edge->thumbnail_src; ?>" class="img-fluid">
                 </a>
-                <?php
-            }
-            ?>
-        </div>
+            </div>
+            <?php
+        }
+        ?>
 
     </div>
 
