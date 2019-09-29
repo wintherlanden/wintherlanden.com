@@ -69,6 +69,7 @@
         .main_container {
             background: #ffffffaa;
             min-height: calc(100vh - 300px);
+            padding: 10px 10px 10px 10px;
         }
 
         .instagram_icon_holder {
