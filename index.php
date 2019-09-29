@@ -2,7 +2,7 @@
 
 header("X-Frame-Options: allow-from https://www.instagram.com/");
 header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Origin: *");
+header("Content-Security-Policy: frame-ancestors instagram.com");
 session_start();
 
 
