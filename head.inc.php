@@ -104,7 +104,7 @@
 
 <div id='header_bar'>
     <div id="language_icon_holder" class="dropdown">
-        <div class="dropdown-toggle" type="button" id="language_icon_button" data-toggle="dropdown" aria-haspopup="true"
+        <div class="dropdown-toggle" id="language_icon_button" data-toggle="dropdown" aria-haspopup="true"
              aria-expanded="false">
             <img src="images/language-icon.png" id="language_icon">
         </div>
