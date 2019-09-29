@@ -35,6 +35,9 @@
         }
 
         .navbar {
+            width: 50%;
+            margin: 0 auto;
+            
             background: rgba(255, 255, 255, 0.63);
             padding-left: 35vw;
             font-variant: small-caps;
