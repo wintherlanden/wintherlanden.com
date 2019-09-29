@@ -47,8 +47,9 @@
         .navbar li a.nav-link {
             font-size: 15px;
             letter-spacing: 1px;
-            font-weight: 600 !important;
-            margin-left: 20px;
+            font-weight: 400 !important;
+            margin-left: 10px;
+            margin-right: 10px;
         }
 
         #header_bar {
