@@ -8,10 +8,10 @@
 $categories = [
 
     "Replica" => "Replica",
-"Figure" => "Figure",
-"Cast" => "Cast",
-"Animals" => "Animals",
-"Portrait" => "Portrait",
+    "Figure" => "Figure",
+    "Cast" => "Cast",
+    "Animals" => "Animals",
+    "Portrait" => "Portrait",
 
 ];
 
@@ -35,45 +35,43 @@ $categories = [
 <div class="gallery">
 
     <?php
-    foreach ($categories as $name => $title)
-    {
-    $images = scandir("gallery/" . $name);
-    $image_front = null;
-    $images_gallery = [];
-    foreach ($images as $image)
-    {
-    if ($image[0] == '.')
-    continue;
+    foreach ($categories as $name => $title) {
+        $images = scandir("gallery/" . $name);
+        $image_front = null;
+        $images_gallery = [];
+        foreach ($images as $image) {
+            if ($image[0] == '.')
+                continue;
 
-    if (strpos($image, "Front") !== false)
-    $image_front = $image;
-    else
-    $images_gallery[] = $image;
-    }
-    ?>
-    <div class="row">
+            if (strpos($image, "Front") !== false)
+                $image_front = $image;
+            else
+                $images_gallery[] = $image;
+        }
+        ?>
+        <div class="row">
 
-        <div class="col-sm-2 nopad">
-            <a href="gallery/<?=$name;?>/<?=$image_front;?>" data-toggle="lightbox" data-gallery="example-gallery">
-                <img src="gallery/<?=$name;?>/<?=$image_front;?>" class="img-fluid">
-            </a>
-        </div>
-        <div class="col-sm-10 nopad">
-            <?php
-                foreach ($images_gallery as $image)
-                {
+            <div class="col-sm-2 nopad">
+                <a href="gallery/<?= $name; ?>/<?= $image_front; ?>" data-toggle="lightbox"
+                   data-gallery="example-gallery">
+                    <img src="gallery/<?= $name; ?>/<?= $image_front; ?>" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-sm-10 nopad">
+                <?php
+                foreach ($images_gallery as $image) {
                     ?>
-            <a href="gallery/<?=$name;?>/<?=$image;?>" data-toggle="lightbox" data-gallery="example-gallery"
-               class="col-sm-3 nopad">
-                <img src="gallery/<?=$name;?>/<?=$image;?>" class="img-fluid">
-            </a>
-            <?php
+                    <a href="gallery/<?= $name; ?>/<?= $image; ?>" data-toggle="lightbox" data-gallery="example-gallery"
+                       class="col-sm-3 nopad">
+                        <img src="gallery/<?= $name; ?>/<?= $image; ?>" class="img-fluid">
+                    </a>
+                    <?php
                 }
                 ?>
-        </div>
+            </div>
 
-    </div>
-    <?php
+        </div>
+        <?php
     }
     ?>
 
