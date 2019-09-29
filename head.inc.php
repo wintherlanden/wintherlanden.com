@@ -25,7 +25,7 @@
         }
 
         #header_logo {
-            height: 500px;
+            height: 200px;
             background: url("images/cropped-Torso-1-1.jpg");
             background-size: cover;
             background-position: center center;
