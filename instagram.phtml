@@ -33,7 +33,7 @@ function store_instagram()
 }
 
 /**
- * @return object
+ * @return array
  */
 function load_instagram()
 {
@@ -52,13 +52,17 @@ function load_instagram()
         }
     }
 
+    usort($instagram_edges, function ($a, $b) {
+       return $a['taken_at_timestamp'] - $b['taken_at_timestamp'];
+    });
+
     return $instagram_edges;
 }
 
 store_instagram();
 $instagram_edges = load_instagram();
 
-// echo '<pre>' . json_encode($instagram_edges, JSON_PRETTY_PRINT) . '</pre>';
+# echo '<pre>' . json_encode($instagram_edges, JSON_PRETTY_PRINT) . '</pre>';
 
 $categories = [
 
