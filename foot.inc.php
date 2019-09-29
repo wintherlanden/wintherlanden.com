@@ -5,9 +5,6 @@ if (!$nolayout) {
     
     </div>
 
-<br>
-<br>
-
 <style>
     /* Sticky footer styles
     -------------------------------------------------- */
