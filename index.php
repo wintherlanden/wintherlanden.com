@@ -1,5 +1,8 @@
 <?php
 
+session_start();
+
+$_SESSION["lang"];
 
 foreach ($_REQUEST as $k => $v) $page = $k;
 #$page = $_REQUEST['uri'];
