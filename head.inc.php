@@ -114,6 +114,10 @@
 </head>
 <body>
 
+<?php
+if (!$nolayout) {
+?>
+
 <div id='header_bar'>
     <div id="language_icon_holder" class="dropdown">
         <div class="dropdown-toggle" id="language_icon_button" data-toggle="dropdown" aria-haspopup="true"
@@ -170,3 +174,8 @@
             <img src="images/instagram-icon.png" id="instagram_icon">
         </a>
     </div>
+
+
+<?php
+}
+?>

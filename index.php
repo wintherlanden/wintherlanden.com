@@ -18,6 +18,8 @@ if ($page[0] == '/') {
 if ($_GET['page']) $page = $_GET['page'];
 if (!$page) $page = 'home';
 
+$nolayout = $_GET['nolayout'] ? 1 : 0;
+
 require_once('head.inc.php');
 
 if (file_exists($page . '.' . $lang . '.phtml'))
