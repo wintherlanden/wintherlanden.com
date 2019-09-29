@@ -25,12 +25,13 @@
 
         #header_logo {
             height: 200px;
-            background: url("images/cropped-Torso-1-1.jpg");
+            background: url("images/logo.jpg");
             background-size: cover;
             background-position: center center;
         }
 
         .navbar {
+            background: #ffffffaa;
             padding-left: 35vw;
             font-variant: small-caps;
             text-transform: uppercase;
@@ -49,7 +50,7 @@
         #header_bar {
             height: 38px;
             z-index: 99999;
-
+            background: #ffffffaa;
         }
 
         #language_icon {
