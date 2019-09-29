@@ -25,6 +25,7 @@ h1, h2, h3, h4, p, body {
     background: url("images/cropped-Torso-1-1.jpg");
 background-size: cover;
 background-position: center center;
+
 }
 .navbar {
    padding-left: 35vw;
@@ -41,12 +42,9 @@ background-position: center center;
     font-weight: 600 !important;
 }
 #header_bar {
-    height: 20px;
+    height: 40px;
     z-index: 99999;
 
-    -webkit-box-shadow: 0 -8px 6px -6px #999;
-    -moz-box-shadow: 0 -8px 6px -6px #999;
-    box-shadow: 0 -8px 6px -6px #999;
 }
 </style>
 
