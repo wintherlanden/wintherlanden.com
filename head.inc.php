@@ -16,7 +16,7 @@
 
     <style>
         body {
-            background: #ccc;
+            background: #ccc url("images/hintergrund.jpg");
         }
 
         h1, h2, h3, h4, p, body {
