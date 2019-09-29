@@ -34,12 +34,13 @@
             background-repeat: no-repeat;
         }
 
-        .navbar {
-            width: 50%;
+        #navbarNav {
+            width: 750px;
             margin: 0 auto;
-            
+        }
+
+        .navbar {
             background: rgba(255, 255, 255, 0.63);
-            padding-left: 35vw;
             font-variant: small-caps;
             text-transform: uppercase;
 
