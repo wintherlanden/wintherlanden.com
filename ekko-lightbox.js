@@ -442,7 +442,7 @@ var Lightbox = (function ($) {
 			value: function _showInstagramVideo(id, $containerForElement) {
 				// instagram load their content into iframe's so this can be put straight into the element
 				var width = this._$element.data('width') || 612;
-				var height = width + 80;
+				var height = width + 105;
 				id = id.substr(-1) !== '/' ? id + '/' : id; // ensure id has trailing slash
 				$containerForElement.html('<iframe width="' + width + '" height="' + height + '" src="' + id + 'embed/captioned/" frameborder="0" allowfullscreen></iframe>');
 				this._resize(width, height);
