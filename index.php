@@ -19,10 +19,10 @@ if (!$page) $page = 'home';
 
 require_once('head.inc.php');
 
-if (file_exists($page . '.' . $lang . '.html'))
-    require_once($page . '.' . $lang . '.html');
-elseif (file_exists($page . '.html'))
-    require_once($page . '.html');
+if (file_exists($page . '.' . $lang . '.phtml'))
+    require_once($page . '.' . $lang . '.phtml');
+elseif (file_exists($page . '.phtml'))
+    require_once($page . '.phtml');
 
 
 require_once('foot.inc.php');
