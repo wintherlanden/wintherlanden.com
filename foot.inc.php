@@ -17,15 +17,15 @@ if (!$nolayout) {
     }
 
     body {
-        margin-bottom: 60px; /* Margin bottom by footer height */
+        margin-bottom: 38px; /* Margin bottom by footer height */
     }
 
     .footer {
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 60px; /* Set the fixed height of the footer here */
-        line-height: 60px; /* Vertically center the text there */
+        height: 38px; /* Set the fixed height of the footer here */
+        line-height: 38px; /* Vertically center the text there */
         background: rgba(44, 51, 57, 0.63);
     }
 
