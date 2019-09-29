@@ -24,7 +24,6 @@ function store_instagram()
         $json_new = json_encode($instagram_edge);
         $json_old = is_file($instagram_directory . $shortcode) ? file_get_contents($instagram_directory . $shortcode) : '';
         if ($json_new != $json_old) {
-            echo 'ABC: ' . $shortcode . '<br>';
             file_put_contents($instagram_directory . $shortcode, json_encode($instagram_edge));
             if (!is_file($instagram_directory . $shortcode)) {
                 echo 'Konnte Instagram-Bild nicht speichern: ' . $shortcode . '<br>';
@@ -46,7 +45,7 @@ function load_instagram()
     $files = scandir($instagram_directory);
     foreach ($files as $file) {
         if (strlen($file) >= 3) {
-            $instagram_edges = array_merge($instagram_edges, json_decode(file_get_contents($instagram_directory . $file), true));
+            $instagram_edges = array_merge($instagram_edges, array_values( json_decode(file_get_contents($instagram_directory . $file), true)));
         }
     }
 
@@ -95,8 +94,8 @@ $categories = [
 
             <?php
             foreach ($instagram_edges as $instagram_edge) {
-                $shortcode = $instagram_edge->node->shortcode;
-                $edge_text = $instagram_edge->node->edge_media_to_caption->edges[0]->node->text;
+                $shortcode = $instagram_edge->shortcode;
+                $edge_text = $instagram_edge->edge_media_to_caption->edges[0]->node->text;
                 ?>
 
                 <blockquote class="instagram-media" data-instgrm-captioned
