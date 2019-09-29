@@ -70,7 +70,22 @@
     });
 
     $(function () {
-        id="#button_lang_de"
+        $('#button_lang_de').click(function () {
+            $.post(
+                '/set-language.php?language=de',
+                function () {
+                    window.location.reload();
+                }
+            );
+        });
+        $('#button_lang_en').click(function () {
+            $.post(
+                '/set-language.php?language=en',
+                function () {
+                    window.location.reload();
+                }
+            );
+        });
     });
 
 </script>

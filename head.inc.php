@@ -109,7 +109,7 @@
             <img src="images/language-icon.png" id="language_icon">
         </div>
         <div id="language_icon_menu" class="dropdown-menu" aria-labelledby="language_icon_button">
-            <a class="dropdown-item" id="#button_lang_de" href="#" >English</a>
+            <a class="dropdown-item" id="#button_lang_en" href="#">English</a>
             <a class="dropdown-item" id="#button_lang_de" href="#">Deutsch</a>
         </div>
     </div>
