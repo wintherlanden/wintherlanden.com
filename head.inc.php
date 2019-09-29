@@ -59,13 +59,17 @@
             right: 5px;
         }
 
+        #instagram_icon {
+            height: 28px;
+        }
+
         .main_container {
             background: #ffffffaa;
             min-height: calc(100vh - 300px);
         }
 
         .instagram_icon_holder {
-            
+            float: right;
         }
     </style>
 
@@ -109,9 +113,9 @@
 <br>
 <br>
 
-<div class="instagram_icon_holder">
-    <img src="images/language-icon.png" id="language_icon">
-</div>
-
 
 <div class="container main_container">
+
+    <div class="instagram_icon_holder">
+        <img src="images/instagram-icon.png" id="instagram_icon">
+    </div>
