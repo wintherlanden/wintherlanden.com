@@ -6,8 +6,10 @@ $desired_width = 300;
 
 $pInfo = pathinfo($src);
 // Save the new path using the current file name
+$dest_dir = __DIR__ . '/thumbnails/';
+@mkdir($dest_dir);
 $dest_filename = $pInfo['basename'] . '.' . $desired_width;
-$dest = __DIR__ . '/thumbnails/' . $dest_filename;
+$dest = $dest_dir . $dest_filename;
 // Do the rest of your stuff and things...
 $source_image = imagecreatefromjpeg($src);
 $width = imagesx($source_image);
