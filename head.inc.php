@@ -97,6 +97,13 @@
         #instagram_icon_holder {
             float: right;
         }
+
+        #image_welcome {
+            width: 50%;
+        }
+        #image_signature {
+            width: 30%;
+        }
     </style>
 
     <title>Wintherlanden</title>
