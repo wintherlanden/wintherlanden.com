@@ -101,7 +101,7 @@ $categories = [
                 $edge_text = $instagram_edge->edge_media_to_caption->edges[0]->node->text;
                 ?>
 
-                <a href="/index.php?page=instagram-embed&nolayout=1&shortcode=<?=$shortcode;?>/" data-toggle="lightbox" data-gallery="example-gallery" data-type="url"
+                <a href="/index.php?page=instagram-embed&nolayout=1&shortcode=<?=$shortcode;?>/" data-toggle="lightbox" data-gallery="example-gallery" data-type="url" data-disable-external-check="true"
                    class="col-sm-3 nopad">
                     <img src="<?= $instagram_edge->thumbnail_src; ?>" class="img-fluid">
                 </a>
