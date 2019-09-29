@@ -40,7 +40,9 @@ function load_instagram()
 
     $files = scandir($instagram_directory);
     foreach ($files as $file) {
-        $instagram_edges [] = json_decode(file_get_contents($instagram_directory . $file), true);
+        if (strlen($file) >= 3) {
+            $instagram_edges = array_merge($instagram_edges, json_decode(file_get_contents($instagram_directory . $file), true));
+        }
     }
 
     return (object)$instagram_edges;
