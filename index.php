@@ -1,7 +1,6 @@
 <?php
 
 
-
 foreach ($_REQUEST as $k => $v) $page = $k;
 #$page = $_REQUEST['uri'];
 if ($page[0] == '/') {
