@@ -20,5 +20,8 @@ imagecopyresampled($virtual_image, $source_image, 0, 0, 0, 0, $desired_width, $d
 imagejpeg($virtual_image, $dest);
 
 
-header('Location: /thumbnails/' . $dest_filename);
-exit;
+if (is_file($dest)) {
+    header('Location: /thumbnails/' . $dest_filename);
+    exit;
+}
+
