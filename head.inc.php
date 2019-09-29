@@ -91,10 +91,10 @@
 
 <div id='header_bar'>
     <div id="language_icon_holder" class="dropdown">
-        <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="dropdown-toggle" type="button" id="language_icon_button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <img src="images/language-icon.png" id="language_icon">
         </div>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <div class="dropdown-menu" aria-labelledby="language_icon_button">
             <a class="dropdown-item" href="#">English</a>
             <a class="dropdown-item" href="#">Deutsch</a>
         </div>
