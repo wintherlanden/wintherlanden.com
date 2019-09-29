@@ -15,6 +15,7 @@ foreach ($_REQUEST as $k => $v) $page = $k;
 if ($page[0] == '/') {
     $page = substr($page, 1);
 }
+if ($_GET['page']) $page = $_GET['page'];
 if (!$page) $page = 'home';
 
 require_once('head.inc.php');
