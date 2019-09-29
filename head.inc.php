@@ -169,14 +169,15 @@ if (!$nolayout) {
 
 <div class="container main_container">
 
+    <!--
     <div id="instagram_icon_holder">
         <a href="https://www.instagram.com/fineart_wintherlanden/">
             <img src="images/instagram-icon.png" id="instagram_icon">
         </a>
     </div>
+    -->
 
-
-<?php
-}
-?>
+    <?php
+    }
+    ?>
 
