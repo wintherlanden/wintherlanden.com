@@ -9,7 +9,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 
-if (strlen($_SESSION["lang"]) == 2) {
+if (strlen($_SESSION["lang"] ?? '') == 2) {
     $lang = $_SESSION["lang"];
 } else {
     $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
