@@ -34,7 +34,7 @@
         }
 
         .navbar {
-            background: #ffffffaa;
+            background: rgba(255,255,255,0.78);
             padding-left: 35vw;
             font-variant: small-caps;
             text-transform: uppercase;
@@ -65,7 +65,7 @@
         }
 
         .main_container {
-            background: rgba(100%,100%,100%,78%);
+            background: rgba(255,255,255,0.78);
             min-height: calc(100vh - 300px);
             padding: 10px 10px 10px 10px;
         }
