@@ -49,7 +49,7 @@ function load_instagram()
         }
     }
 
-    return (object)$instagram_edges;
+    return $instagram_edges;
 }
 
 store_instagram();
@@ -95,6 +95,8 @@ $categories = [
             <?php
             foreach ($instagram_edges as $instagram_edge) {
                 $shortcode = $instagram_edge->shortcode;
+                echo '$shortcode';
+                echo $shortcode;
                 $edge_text = $instagram_edge->edge_media_to_caption->edges[0]->node->text;
                 ?>
 
