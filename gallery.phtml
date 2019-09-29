@@ -18,7 +18,7 @@ $categories = [
 ?>
 
 <style>
-    .gallery img {
+    .gallery img.fixed_height {
         height: 212px;
     }
 
@@ -66,7 +66,7 @@ $categories = [
                     ?>
                     <a href="gallery/<?= $name; ?>/<?= $image; ?>" data-toggle="lightbox" data-gallery="example-gallery"
                        class="col-sm-3 nopad">
-                        <img src="gallery/<?= $name; ?>/<?= $image; ?>" class="img-fluid">
+                        <img src="gallery/<?= $name; ?>/<?= $image; ?>" class="img-fluid fixed_height">
                     </a>
                     <?php
                 }
