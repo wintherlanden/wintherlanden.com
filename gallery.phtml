@@ -57,7 +57,7 @@ $categories = [
             <div class="col-sm-2 nopad">
                 <a href="gallery/<?= $name; ?>/<?= $image_front; ?>" data-toggle="lightbox"
                    data-gallery="example-gallery">
-                    <img src="gallery/<?= $name; ?>/<?= $image_front; ?>" class="img-fluid">
+                    <img src="thumb.php?src=gallery/<?= $name; ?>/<?= $image_front; ?>" class="img-fluid">
                 </a>
             </div>
             <div class="col-sm-10 nopad">
@@ -66,7 +66,7 @@ $categories = [
                     ?>
                     <a href="gallery/<?= $name; ?>/<?= $image; ?>" data-toggle="lightbox" data-gallery="example-gallery"
                        class="col-sm-3 nopad">
-                        <img src="gallery/<?= $name; ?>/<?= $image; ?>" class="img-fluid fixed_height">
+                        <img src="thumb.php?src=gallery/<?= $name; ?>/<?= $image; ?>" class="img-fluid fixed_height">
                     </a>
                     <?php
                 }
