@@ -2,6 +2,10 @@
 
 session_start();
 
+header_remove("X-Frame-Options");
+
+
+
 if (strlen($_SESSION["lang"]) == 2) {
     $lang = $_SESSION["lang"];
 } else {

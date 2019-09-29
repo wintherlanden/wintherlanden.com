@@ -1,4 +1,9 @@
-</div>
+
+<?php
+if (!$nolayout) {
+    ?>
+    
+    </div>
 
 <br>
 <br>
@@ -90,6 +95,10 @@
 
 </script>
 
+
+<?php
+}
+?>
 
 </body>
 </html>
