@@ -74,14 +74,13 @@ $instagram_edges = load_instagram();
     }
 
     .instagram img {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
-    .nopad {
-        padding-left: 0;
-        padding-right: 0;
+    .small_padding {
+        padding-left: 5px;
+        padding-right: 5px;
     }
-
 
 </style>
 
@@ -101,7 +100,7 @@ $instagram_edges = load_instagram();
                     $edge_text = $instagram_edge->edge_media_to_caption->edges[0]->node->text;
                     ?>
 
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 small_padding">
 
                         <a href="https://www.instagram.com/p/<?= $shortcode; ?>" data-toggle="lightbox"
                            data-gallery="example-gallery" data-type="instagram"
