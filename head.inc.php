@@ -24,6 +24,10 @@
             font-family: 'Raleway', sans-serif;
         }
 
+        p {
+            font-weight: 200;
+        }
+
         #header_logo {
             height: 200px;
             width: 50vw;
