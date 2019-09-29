@@ -40,11 +40,22 @@ background-position: center center;
     letter-spacing: 1px;
     font-weight: 600 !important;
 }
+#header_bar {
+    height: 20px;
+
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}
 </style>
 
     <title>Wintherlanden</title>
   </head>
   <body>
+
+<div id='header_bar'>
+
+</div>
 
 <div id='header_logo'>
 </div>
