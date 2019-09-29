@@ -35,7 +35,7 @@
         }
 
         .navbar {
-            background: rgba(255,255,255,0.63);
+            background: rgba(255, 255, 255, 0.63);
             padding-left: 35vw;
             font-variant: small-caps;
             text-transform: uppercase;
@@ -56,7 +56,7 @@
         #header_bar {
             height: 38px;
             z-index: 99999;
-            background: rgba(255,255,255,0.63);
+            background: rgba(255, 255, 255, 0.63);
         }
 
         #instagram_icon {
@@ -66,10 +66,10 @@
         }
 
         .main_container {
-            background: rgba(255,255,255,0.78);
+            background: rgba(255, 255, 255, 0.78);
             min-height: calc(100vh - 300px);
             padding: 50px 10px 30px 10px;
-            color: rgba(0,0,0,.5);
+            color: rgba(0, 0, 0, .5);
             font-weight: 400;
         }
 
@@ -104,6 +104,7 @@
             width: 50%;
             margin-bottom: 30px;
         }
+
         #image_signature {
             width: 30%;
         }
@@ -162,5 +163,7 @@
 <div class="container main_container">
 
     <div id="instagram_icon_holder">
-        <img src="images/instagram-icon.png" id="instagram_icon">
+        <a href="https://www.instagram.com/fineart_wintherlanden/">
+            <img src="images/instagram-icon.png" id="instagram_icon">
+        </a>
     </div>
