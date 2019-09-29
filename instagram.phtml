@@ -29,7 +29,7 @@ function load_instagram()
 {
     $instagram_directory = __DIR__ . '/instagram-api/';
     mkdir($instagram_directory);
-
+    
    $files = scandir($instagram_directory);
     foreach ($files as $file) {
         echo $file;
