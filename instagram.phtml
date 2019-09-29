@@ -21,9 +21,14 @@ function store_instagram()
 
     foreach ($instagram_edges as $instagram_edge) {
         $shortcode = $instagram_edge->node->shortcode;
-        file_put_contents($instagram_directory . $shortcode, json_encode($instagram_edge));
-        if (!is_file($instagram_directory . $shortcode)) {
-            echo 'Konnte Instagram-Bild nicht speichern: ' . $shortcode . '<br>';
+        $json_new = json_encode($instagram_edge);
+        $json_old = is_file($instagram_directory . $shortcode) ? file_get_contents($instagram_directory . $shortcode) : '';
+        if ($json_new != $json_old) {
+            echo 'ABC: ' . $shortcode . '<br>';
+            file_put_contents($instagram_directory . $shortcode, json_encode($instagram_edge));
+            if (!is_file($instagram_directory . $shortcode)) {
+                echo 'Konnte Instagram-Bild nicht speichern: ' . $shortcode . '<br>';
+            }
         }
     }
 }
