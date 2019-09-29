@@ -444,7 +444,7 @@ var Lightbox = (function ($) {
 				var width = this._$element.data('width') || 612;
 				var height = width + 80;
 				id = id.substr(-1) !== '/' ? id + '/' : id; // ensure id has trailing slash
-				$containerForElement.html('<iframe width="' + width + '" height="' + height + '" src="' + id + 'embed/" frameborder="0" allowfullscreen></iframe>');
+				$containerForElement.html('<iframe width="' + width + '" height="' + height + '" src="' + id + 'embed/captioned/" frameborder="0" allowfullscreen></iframe>');
 				this._resize(width, height);
 				this._config.onContentLoaded.call(this);
 				if (this._$modalArrows) //hide the arrows when showing video
