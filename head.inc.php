@@ -76,6 +76,10 @@
             right: 5px;
         }
 
+        #language_icon_button {
+
+        }
+
         #language_icon {
             height: 28px;
         }
