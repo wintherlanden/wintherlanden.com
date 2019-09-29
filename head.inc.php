@@ -63,6 +63,10 @@
             background: #ffffffaa;
             min-height: calc(100vh - 300px);
         }
+
+        .instagram_icon_holder {
+            
+        }
     </style>
 
     <title>Wintherlanden</title>
@@ -104,6 +108,10 @@
 
 <br>
 <br>
+
+<div class="instagram_icon_holder">
+    <img src="images/language-icon.png" id="language_icon">
+</div>
 
 
 <div class="container main_container">
