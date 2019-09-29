@@ -69,7 +69,7 @@
             background: rgba(255,255,255,0.78);
             min-height: calc(100vh - 300px);
             padding: 50px 10px 30px 10px;
-            color: #212529;
+            color: rgba(0,0,0,.5);
             font-weight: 400;
         }
 
