@@ -36,6 +36,11 @@ $categories = [
         padding-left: 0;
         padding-right: 0;
     }
+
+    .small_padding {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
 </style>
 
 <div class="gallery">
@@ -71,7 +76,7 @@ $categories = [
                 foreach ($images_gallery as $image) {
                     ?>
                     <a href="gallery/<?= $name; ?>/<?= $image; ?>" data-toggle="lightbox" data-gallery="example-gallery"
-                       class="col-sm-3 nopad">
+                       class="col-sm-3 small_padding">
                         <img src="thumb.php?src=gallery/<?= $name; ?>/<?= $image; ?>" class="img-fluid fixed_height">
                     </a>
                     <?php
