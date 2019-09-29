@@ -1,6 +1,7 @@
 <?php
 
 header("X-Frame-Options: allow-from https://www.instagram.com/");
+header("Access-Control-Allow-Origin: *");
 session_start();
 
 
