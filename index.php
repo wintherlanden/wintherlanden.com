@@ -5,7 +5,8 @@ header("Access-Control-Allow-Origin: *");
 header("Content-Security-Policy: frame-ancestors https://instagram.com");
 session_start();
 
-
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 
 if (strlen($_SESSION["lang"]) == 2) {
@@ -21,10 +22,10 @@ foreach ($_REQUEST as $k => $v) $page = $k;
 if ($page[0] == '/') {
     $page = substr($page, 1);
 }
-if ($_GET['page']) $page = $_GET['page'];
+if (!empty($_GET['page'])) $page = $_GET['page'];
 if (!$page) $page = 'home';
 
-$nolayout = $_GET['nolayout'] ? 1 : 0;
+$nolayout = ($_GET['nolayout'] ?? 0) ? 1 : 0;
 
 require_once('head.inc.php');
 
