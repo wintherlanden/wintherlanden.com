@@ -69,6 +69,10 @@
         $(this).ekkoLightbox();
     });
 
+    $(function () {
+        id="#button_lang_de"
+    });
+
 </script>
 
 
