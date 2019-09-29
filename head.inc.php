@@ -80,6 +80,10 @@
 
         }
 
+        #language_icon_button::after {
+border: none;
+        }
+
         #language_icon {
             height: 28px;
         }
