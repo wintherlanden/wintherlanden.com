@@ -63,6 +63,12 @@
             background: rgba(255, 255, 255, 0.63);
         }
 
+        #footer {
+            height: 38px;
+            z-index: 99999;
+            background: rgba(255, 255, 255, 0.63);
+        }
+
         #instagram_icon {
             position: relative;
             left: 60px;
