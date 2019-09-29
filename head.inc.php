@@ -53,7 +53,7 @@ background-position: center center;
   <body>
 
 <div id='header_bar'>
-
+  <img src="images/language-icon.png">
 </div>
 
 <div id='header_logo'>
