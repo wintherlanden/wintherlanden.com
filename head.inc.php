@@ -18,6 +18,7 @@
         body {
             background: #ccc url("images/hintergrund.jpg");
             background-size: 100%;
+            overscroll-behavior: none;
         }
 
         h1, h2, h3, h4, p, body {
