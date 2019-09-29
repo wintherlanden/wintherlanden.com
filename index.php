@@ -1,8 +1,8 @@
 <?php
 
+header("X-Frame-Options: allow-from https://www.instagram.com/");
 session_start();
 
-header_remove("X-Frame-Options");
 
 
 
