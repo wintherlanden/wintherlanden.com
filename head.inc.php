@@ -58,6 +58,11 @@
             top: 5px;
             right: 5px;
         }
+
+        .main_container {
+            background: #ffffffaa;
+            min-height: calc(100vh - 300px);
+        }
     </style>
 
     <title>Wintherlanden</title>
