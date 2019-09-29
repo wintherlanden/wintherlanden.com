@@ -42,6 +42,7 @@ background-position: center center;
 }
 #header_bar {
     height: 20px;
+    z-index: 99999;
 
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
