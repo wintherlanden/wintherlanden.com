@@ -60,6 +60,8 @@
         }
 
         #instagram_icon {
+            position: relative;
+            left: 60px;
             height: 28px;
         }
 
