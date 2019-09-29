@@ -45,33 +45,11 @@ $categories = [
 
 <div class="gallery">
 
-    <?php
-    foreach ($categories as $name => $title)
-    {
-    $images = scandir("gallery/" . $name);
-    $image_front = null;
-    $images_gallery = [];
-    foreach ($images as $image)
-    {
-    if ($image[0] == '.')
-    continue;
-
-    if (strpos($image, "Front") !== false)
-    $image_front = $image;
-    else
-    $images_gallery[] = $image;
-    }
-    ?>
     <div class="row">
 
-        <div class="col-sm-2 nopad">
-            <a href="gallery/<?=$name;?>/<?=$image_front;?>" data-toggle="lightbox" data-gallery="example-gallery">
-                <img src="gallery/<?=$name;?>/<?=$image_front;?>" class="img-fluid">
-            </a>
-        </div>
-        <div class="col-sm-10 nopad">
+        <div class="col-sm-12 nopad">
             <?php
-                foreach ($images_gallery as $image)
+                foreach ($edges as $edge)
                 {
                     ?>
             <a href="gallery/<?=$name;?>/<?=$image;?>" data-toggle="lightbox" data-gallery="example-gallery"
@@ -84,9 +62,6 @@ $categories = [
         </div>
 
     </div>
-    <?php
-    }
-    ?>
 
 
 </div>
