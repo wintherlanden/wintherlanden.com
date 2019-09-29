@@ -1,0 +1,90 @@
+# Executables
+*.exe
+*.dll
+*.pdb
+*.mdb
+*.bin
+
+# Packages
+*.nupkg
+
+# Build directories
+bin
+obj
+Debug
+Release
+packages
+build
+pub
+publish
+
+# IDE-specific directories
+.idea
+*.userprefs
+.suo
+.vs
+.droidres
+
+# Nuget
+*.lock.json
+*.nuget.props
+*.nuget.targets
+
+# backup files
+*.save
+*.bak
+*.backup
+*.suo
+*.user
+
+# Temporary directories
+tmp
+temp
+x
+*.so.0
+xxx
+
+# UWP
+AppPackages
+BundleArtifacts
+
+# macos
+.DS_Store
+
+# version incrementer
+AndroidManifest.temp.xml
+Info.plist
+BuildVersion.gen.cs
+app.props
+
+# xaml
+*.xaml.gen.cs
+
+# Android Resource.Designer.cs
+**/[Rr]esource.[Dd]esigner.cs
+
+# Android C++
+objs-debug
+*.a
+
+
+# Dependencies
+src/framework/DK.Network.Http/boringssl
+src/framework/DK.Network.Http/curl
+src/framework/DK.Network.Http/nghttp2
+src/framework/DK.Network.Http/temp_install
+
+# pkg-config: ignore certain unneeded files (but we want other .pc files)
+libnghttp2_asio.pc
+
+# Android copied resources
+src/modules/App.Android/Resources
+src/modules/App.Android/temp
+**/MSBuild.gen.cs
+
+# iOS copied resources
+src/modules/App.iOS/Assets.xcassets
+src/modules/App.iOS/Info.plist
+src/modules/App.iOS/iTunesArtwork@2x
+src/modules/App.iOS/iTunesArtwork
+**/MSBuild.gen.cs
