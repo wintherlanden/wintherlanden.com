@@ -26,7 +26,7 @@ if (!$nolayout) {
         width: 100%;
         height: 60px; /* Set the fixed height of the footer here */
         line-height: 60px; /* Vertically center the text there */
-        background: rgba(255, 255, 255, 0.63);
+        background: rgba(44, 51, 57, 0.63);
     }
 
     .footer .text-muted {
