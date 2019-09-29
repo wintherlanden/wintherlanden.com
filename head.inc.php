@@ -87,7 +87,15 @@
 <body>
 
 <div id='header_bar'>
-    <img src="images/language-icon.png" id="language_icon">
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="images/language-icon.png" id="language_icon">
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">English</a>
+            <a class="dropdown-item" href="#">Deutsch</a>
+        </div>
+    </div>
 </div>
 
 <div id='header_logo'>
