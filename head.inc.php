@@ -65,7 +65,7 @@
         }
 
         .main_container {
-            background: #ffffffaa;
+            background: rgba(100%,100%,100%,78%);
             min-height: calc(100vh - 300px);
             padding: 10px 10px 10px 10px;
         }
