@@ -25,7 +25,8 @@
 
         #header_logo {
             height: 200px;
-            background: url("images/logo.jpg");
+            width: 500px;
+            background: url("images/Schriftzug.png");
             background-size: cover;
             background-position: center center;
         }
