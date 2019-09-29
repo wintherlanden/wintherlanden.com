@@ -45,7 +45,10 @@ function load_instagram()
     $files = scandir($instagram_directory);
     foreach ($files as $file) {
         if (strlen($file) >= 3) {
-            $instagram_edges = array_merge($instagram_edges, array_values( json_decode(file_get_contents($instagram_directory . $file), true)));
+            $a = json_decode(file_get_contents($instagram_directory . $file));
+            foreach ($a as $item) {
+                $instagram_edges[] = $item;
+            }
         }
     }
 
@@ -94,9 +97,7 @@ $categories = [
 
             <?php
             foreach ($instagram_edges as $instagram_edge) {
-                echo '$shortcode';
-                echo json_encode($instagram_edge);
-                echo $shortcode;
+                $shortcode = $instagram_edge->shortcode;
                 $edge_text = $instagram_edge->edge_media_to_caption->edges[0]->node->text;
                 ?>
 
