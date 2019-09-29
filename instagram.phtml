@@ -5,16 +5,43 @@
 
 <?php
 
-$instagram_html = file_get_contents('instagram.inc.php');
+function store_instagram()
+{
+    $instagram_directory = __DIR__ . '/instagram-api/';
+    mkdir($instagram_directory);
 
-$instagram_html = explode('window._sharedData =', $instagram_html)[1];
-$instagram_html = explode(';</script', $instagram_html)[0];
+    $instagram_html = file_get_contents('instagram.inc.php');
 
-$instagram_json = json_decode($instagram_html);
+    $instagram_html = explode('window._sharedData =', $instagram_html)[1];
+    $instagram_html = explode(';</script', $instagram_html)[0];
 
-$instagram_edges = $instagram_json->entry_data->ProfilePage[0]->graphql->user->edge_owner_to_timeline_media->edges;
+    $instagram_json = json_decode($instagram_html);
 
-echo '<pre>' . json_encode($edges, JSON_PRETTY_PRINT) . '</pre>';
+    $instagram_edges = $instagram_json->entry_data->ProfilePage[0]->graphql->user->edge_owner_to_timeline_media->edges;
+
+    foreach ($instagram_edges as $instagram_edge) {
+        $shortcode = $instagram_edge->node->shortcode;
+        file_put_contents($instagram_directory . $shortcode, json_encode($instagram_edge));
+    }
+}
+
+function load_instagram()
+{
+    $instagram_directory = __DIR__ . '/instagram-api/';
+    mkdir($instagram_directory);
+
+   $files = scandir($instagram_directory);
+    foreach ($files as $file) {
+        echo $file;
+   }
+
+}
+
+store_instagram();
+$instagram_edges = load_instagram();
+
+
+echo '<pre>' . json_encode($instagram_edges, JSON_PRETTY_PRINT) . '</pre>';
 
 $categories = [
 
