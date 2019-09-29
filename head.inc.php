@@ -25,9 +25,12 @@
 
         #header_logo {
             height: 200px;
+            width: 40vw;
+            margin-left: 30vw;
             background: url("images/Schriftzug.png");
-            background-size: cover;
+            background-size: contain;
             background-position: center center;
+            background-repeat: no-repeat;
         }
 
         .navbar {
