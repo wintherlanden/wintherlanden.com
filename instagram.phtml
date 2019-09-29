@@ -28,6 +28,9 @@ function store_instagram()
     }
 }
 
+/**
+ * @return object
+ */
 function load_instagram()
 {
     $instagram_directory = __DIR__ . '/instagram-api/';
@@ -37,7 +40,7 @@ function load_instagram()
 
     $files = scandir($instagram_directory);
     foreach ($files as $file) {
-        $instagram_edges []= json_decode(file_get_contents($instagram_directory . $file), true);
+        $instagram_edges [] = json_decode(file_get_contents($instagram_directory . $file), true);
     }
 
     return (object)$instagram_edges;
@@ -84,9 +87,9 @@ $categories = [
 
 
             <?php
-            foreach ($edges as $edge) {
-                $shortcode = $edge->node->shortcode;
-                $edge_text = $edge->node->edge_media_to_caption->edges[0]->node->text;
+            foreach ($instagram_edges as $instagram_edge) {
+                $shortcode = $instagram_edge->node->shortcode;
+                $edge_text = $instagram_edge->node->edge_media_to_caption->edges[0]->node->text;
                 ?>
 
                 <blockquote class="instagram-media" data-instgrm-captioned
