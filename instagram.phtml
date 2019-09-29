@@ -169,9 +169,9 @@ $categories = [
                 </blockquote>
                 <script async src="//www.instagram.com/embed.js"></script>
 
-                <a href="gallery/<?= $name; ?>/<?= $image; ?>" data-toggle="lightbox" data-gallery="example-gallery"
+                <a href="<?= $instagram_edge->display_url; ?>" data-toggle="lightbox" data-gallery="example-gallery"
                    class="col-sm-3 nopad">
-                    <img src="gallery/<?= $name; ?>/<?= $image; ?>" class="img-fluid">
+                    <img src="<?= $instagram_edge->thumbnail_src; ?>" class="img-fluid">
                 </a>
                 <?php
             }
