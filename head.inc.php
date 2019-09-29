@@ -16,8 +16,7 @@
 
     <style>
         body {
-            # background: black;
-            # color: white;
+            background: #ccc;
         }
 
         h1, h2, h3, h4, p, body {
@@ -29,7 +28,6 @@
             background: url("images/cropped-Torso-1-1.jpg");
             background-size: cover;
             background-position: center center;
-
         }
 
         .navbar {
