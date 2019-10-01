@@ -2,7 +2,8 @@
 
 <?php
 
-$input_name_first = $_REQUEST['input_name_first'];
+$input_name_first = ($_REQUEST['input_name_first'] ?? '') ?: 'Vorname';
+$input_name_last = ($_REQUEST['input_name_last'] ?? '') ?: 'Nachname';
 
 $recipients = [
     'info@wintherlanden.com',
