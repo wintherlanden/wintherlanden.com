@@ -1,4 +1,6 @@
-<h1><?= ($lang == 'de' ? 'Kontakt' : 'Contact'); ?></h1>
+<center>
+    <h1><?= ($lang == 'de' ? 'Kontakt' : 'Contact'); ?></h1>
+</center>
 
 <?php
 
@@ -31,7 +33,9 @@ if ($input_email) {
         mail($recipient, $subject, $message, $headers);
     }
 
-    echo ($lang == 'de' ? 'Vielen Dank für Ihre Nachricht.' : 'Contact');
+    echo '<center><p>';
+    echo ($lang == 'de' ? 'Vielen Dank für Ihre Nachricht.' : 'Your message has been sent.');
+    echo '</p>    </center>';
 
 } else {
     ?>
