@@ -10,12 +10,16 @@
                 <input type="text" class="form-control" id="input_name_last" placeholder="">
             </div>
         <div class="form-group">
-            <label for="inputAddress">E-Mail</label>
+            <label for="input_email">E-Mail</label>
             <input type="email" class="form-control" id="input_email" placeholder="">
         </div>
         <div class="form-group">
-            <label for="inputAddress2">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            <label for="input_phone"><?= ($lang == 'de' ? 'Telefon' : 'Phone'); ?></label>
+            <input type="text" class="form-control" id="input_phone" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="input_message"><?= ($lang == 'de' ? 'Nachricht' : 'Message'); ?></label>
+            <input type="text" class="form-control" id="input_message" placeholder="">
         </div>
         <div class="form-row">
             <div class="form-group col-md-6">
