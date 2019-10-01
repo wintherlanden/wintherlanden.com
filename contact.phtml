@@ -23,7 +23,7 @@ if ($input_email) {
     ];
     foreach ($recipients as $recipient) {
         $subject = 'Kontaktformular: ' . $input_name_first . ' ' . $input_name_last . ': ' . substr($input_message, 0, 20);
-        $message = 'Kontaktformular: ' . LN . LN . $input_message $input_name_first . ' ' . $input_name_last . ' ' . substr($input_message, 0, 20);
+        $message = 'Kontaktformular: ' . LN . LN . 'Nachricht: ' . LN . LN . $input_message . LN . LN . 'Name: ' . $input_name_first . ' ' . $input_name_last . LN . 'E-Mail: ' . $input_email . LN . 'Telefon: ' . $input_phone;
         $headers = array(
             'From' => trim($input_name_first . ' ' . $input_name_last) . ' Kontaktfomular <info@wintherlanden.com>',
             'Reply-To' => ($input_email ?: 'info@wintherlanden.com'),
@@ -34,7 +34,7 @@ if ($input_email) {
     }
 
     echo '<center><p>';
-    echo ($lang == 'de' ? 'Vielen Dank für Ihre Nachricht.' : 'Your message has been sent.');
+    echo($lang == 'de' ? 'Vielen Dank für Ihre Nachricht.' : 'Your message has been sent.');
     echo '</p>    </center>';
 
 } else {
@@ -93,14 +93,14 @@ if ($input_email) {
 
 <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function() {
+    (function () {
         'use strict';
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             // Fetch all the forms we want to apply custom Bootstrap validation styles to
             var forms = document.getElementsByClassName('needs-validation');
             // Loop over them and prevent submission
-            var validation = Array.prototype.filter.call(forms, function(form) {
-                form.addEventListener('submit', function(event) {
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
                     if (form.checkValidity() === false) {
                         event.preventDefault();
                         event.stopPropagation();
