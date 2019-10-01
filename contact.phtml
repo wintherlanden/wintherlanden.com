@@ -23,7 +23,7 @@ if ($input_email) {
     ];
     foreach ($recipients as $recipient) {
         $subject = 'Kontaktformular: ' . $input_name_first . ' ' . $input_name_last . ': ' . substr($input_message, 0, 20);
-        $message = 'Kontaktformular: ' . LN . LN . 'Nachricht: ' . LN . LN . $input_message . LN . LN . 'Name: ' . $input_name_first . ' ' . $input_name_last . LN . 'E-Mail: ' . $input_email . LN . 'Telefon: ' . $input_phone;
+        $message = 'Kontaktformular: ' . LN . LN . 'Name: ' . $input_name_first . ' ' . $input_name_last . LN . 'E-Mail: ' . $input_email . LN . 'Telefon: ' . $input_phone . LN . LN . 'Nachricht: ' . LN . LN . $input_message . LN;
         $headers = array(
             'From' => trim($input_name_first . ' ' . $input_name_last) . ' Kontaktfomular <info@wintherlanden.com>',
             'Reply-To' => ($input_email ?: 'info@wintherlanden.com'),
