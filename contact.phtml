@@ -1,6 +1,12 @@
 <h1><?= ($lang == 'de' ? 'Kontakt' : 'Contact'); ?></h1>
 
-<form>
+<?php
+
+echo json_encode($_POST);
+
+?>
+
+<form action="?contact" method="post">
     <div class="row">
         <div class="form-group col-md-6">
             <label for="input_name_first"><?= ($lang == 'de' ? 'Vorname' : 'First name'); ?></label>
@@ -18,13 +24,12 @@
         </div>
         <div class="form-group col-md-6">
             <label for="input_phone"><?= ($lang == 'de' ? 'Telefon' : 'Phone'); ?></label>
-            <input type="text" class="form-control" id="input_phone" placeholder="">
+            <input type="tel" class="form-control" id="input_phone" placeholder="">
         </div>
     </div>
     <div class="form-group">
         <label for="input_message"><?= ($lang == 'de' ? 'Nachricht' : 'Message'); ?></label>
-        <textarea type="text" class="form-control" id="input_message" placeholder="" style="height: 200px;">
-            </textarea>
+        <textarea type="text" class="form-control" id="input_message" placeholder="" style="height: 200px;"></textarea>
     </div>
     <div class="row">
         <div class="form-group col-md-10">
