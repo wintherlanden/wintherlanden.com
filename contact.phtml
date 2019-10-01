@@ -2,8 +2,21 @@
 
 <?php
 
-echo json_encode($_SERVER);
-die;
+$input_name_first = $_REQUEST['input_name_first'];
+
+$recipients = [
+        
+];
+$to      = 'nobody@example.com';
+$subject = 'the subject';
+$message = 'hello';
+$headers = array(
+    'From' => 'webmaster@example.com',
+    'Reply-To' => 'webmaster@example.com',
+    'X-Mailer' => 'PHP/' . phpversion()
+);
+
+mail($to, $subject, $message, $headers);
 
 ?>
 
