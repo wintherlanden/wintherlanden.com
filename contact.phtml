@@ -2,11 +2,17 @@
 
 <?php
 
-$input_name_first = trim($_REQUEST['input_name_first'] ?? '') ?: 'Kein Vorname';
-$input_name_last = trim($_REQUEST['input_name_last'] ?? '') ?: 'Kein Nachname';
-$input_email = trim($_REQUEST['input_email'] ?? '') ?: '';
-$input_phone = trim($_REQUEST['input_phone'] ?? '') ?: 'Keine Telefonnummer';
-$input_message = trim($_REQUEST['input_message'] ?? '') ?: 'Keine Nachricht';
+$input_name_first = trim($_REQUEST['input_name_first'] ?? '');
+$input_name_last = trim($_REQUEST['input_name_last'] ?? '');
+$input_email = trim($_REQUEST['input_email'] ?? '');
+$input_phone = trim($_REQUEST['input_phone'] ?? '');
+$input_message = trim($_REQUEST['input_message'] ?? '');
+
+$input_name_first = $input_name_first ?: 'Kein Vorname';
+$input_name_last = $input_name_last ?: 'Kein Nachname';
+$input_email = $input_email ?: 'Keine E-Mail';
+$input_phone = $input_phone ?: 'Keine Telefonnummer';
+$input_message = $input_message ?: 'Keine Nachricht';
 
 $recipients = [
     'info@wintherlanden.com',
@@ -34,22 +40,22 @@ foreach ($recipients as $recipient) {
         </div>
         <div class="form-group col-md-6">
             <label for="input_name_last"><?= ($lang == 'de' ? 'Nachname' : 'Last name'); ?></label>
-            <input type="text" class="form-control" id="input_name_last" name="input_name_last" value="<?=htmlspecialchars($input_name_first, ENT_QUOTES, "UTF-8");?>" placeholder="">
+            <input type="text" class="form-control" id="input_name_last" name="input_name_last" value="<?=htmlspecialchars($input_name_last, ENT_QUOTES, "UTF-8");?>" placeholder="">
         </div>
     </div>
     <div class="row">
         <div class="form-group col-md-6">
             <label for="input_email">E-Mail</label>
-            <input type="email" class="form-control" id="input_email" name="input_email" value="<?=htmlspecialchars($input_name_first, ENT_QUOTES, "UTF-8");?>" placeholder="">
+            <input type="email" class="form-control" id="input_email" name="input_email" value="<?=htmlspecialchars($input_email, ENT_QUOTES, "UTF-8");?>" placeholder="">
         </div>
         <div class="form-group col-md-6">
             <label for="input_phone"><?= ($lang == 'de' ? 'Telefon' : 'Phone'); ?></label>
-            <input type="tel" class="form-control" id="input_phone" name="input_phone" value="<?=htmlspecialchars($input_name_first, ENT_QUOTES, "UTF-8");?>" placeholder="">
+            <input type="tel" class="form-control" id="input_phone" name="input_phone" value="<?=htmlspecialchars($input_phone, ENT_QUOTES, "UTF-8");?>" placeholder="">
         </div>
     </div>
     <div class="form-group">
         <label for="input_message"><?= ($lang == 'de' ? 'Nachricht' : 'Message'); ?></label>
-        <textarea type="text" class="form-control" id="input_message" name="input_message" placeholder="" style="height: 200px;"><?=htmlspecialchars($input_name_first, ENT_QUOTES, "UTF-8");?></textarea>
+        <textarea type="text" class="form-control" id="input_message" name="input_message" placeholder="" style="height: 200px;"><?=htmlspecialchars($input_message, ENT_QUOTES, "UTF-8");?></textarea>
     </div>
     <div class="row">
         <div class="form-group col-md-10">
