@@ -2,7 +2,7 @@
 
 <?php
 
-echo json_encode($_POST);
+echo json_encode($_SERVER);
 
 ?>
 
@@ -10,31 +10,31 @@ echo json_encode($_POST);
     <div class="row">
         <div class="form-group col-md-6">
             <label for="input_name_first"><?= ($lang == 'de' ? 'Vorname' : 'First name'); ?></label>
-            <input type="text" class="form-control" id="input_name_first" placeholder="">
+            <input type="text" class="form-control" id="input_name_first" name="input_name_first" placeholder="">
         </div>
         <div class="form-group col-md-6">
             <label for="input_name_last"><?= ($lang == 'de' ? 'Nachname' : 'Last name'); ?></label>
-            <input type="text" class="form-control" id="input_name_last" placeholder="">
+            <input type="text" class="form-control" id="input_name_last" name="input_name_last" placeholder="">
         </div>
     </div>
     <div class="row">
         <div class="form-group col-md-6">
             <label for="input_email">E-Mail</label>
-            <input type="email" class="form-control" id="input_email" placeholder="">
+            <input type="email" class="form-control" id="input_email" name="input_email" placeholder="">
         </div>
         <div class="form-group col-md-6">
             <label for="input_phone"><?= ($lang == 'de' ? 'Telefon' : 'Phone'); ?></label>
-            <input type="tel" class="form-control" id="input_phone" placeholder="">
+            <input type="tel" class="form-control" id="input_phone" name="input_phone" placeholder="">
         </div>
     </div>
     <div class="form-group">
         <label for="input_message"><?= ($lang == 'de' ? 'Nachricht' : 'Message'); ?></label>
-        <textarea type="text" class="form-control" id="input_message" placeholder="" style="height: 200px;"></textarea>
+        <textarea type="text" class="form-control" id="input_message" name="input_message" placeholder="" style="height: 200px;"></textarea>
     </div>
     <div class="row">
         <div class="form-group col-md-10">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="input_checkbox">
+                <input class="form-check-input" type="checkbox" id="input_checkbox" name="input_checkbox">
                 <label class="form-check-label" for="input_checkbox">
                     <?= ($lang == 'de' ? 'Datenschutz: Ich erkläre mich mit der Verarbeitung der eingegebenen Daten sowie der Datenschutzerklärung einverstanden.' : 'I agree with the processing of the entered data as well as the data protection declaration.'); ?>
                 </label>
