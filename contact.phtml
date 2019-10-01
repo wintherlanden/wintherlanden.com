@@ -2,8 +2,11 @@
 
 <?php
 
-$input_name_first = ($_REQUEST['input_name_first'] ?? '') ?: 'Vorname';
-$input_name_last = ($_REQUEST['input_name_last'] ?? '') ?: 'Nachname';
+$input_name_first = ($_REQUEST['input_name_first'] ?? '') ?: 'Kein Vorname';
+$input_name_last = ($_REQUEST['input_name_last'] ?? '') ?: 'Kein Nachname';
+$input_email = ($_REQUEST['input_email'] ?? '') ?: '';
+$input_phone = ($_REQUEST['input_phone'] ?? '') ?: 'Keine Telefonnummer';
+$input_message = ($_REQUEST['input_message'] ?? '') ?: 'Keine Nachricht';
 
 $recipients = [
     'info@wintherlanden.com',
