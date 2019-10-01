@@ -16,7 +16,7 @@ foreach ($recipients as $recipient) {
     $subject = 'subject';
     $message = 'Kontaktformular: ' . $input_name_first . ' ' . $input_name_last . ' ' . substr($input_message, 0, 20);
     $headers = array(
-        'From' => 'Kontaktformular <info@wintherlanden.com>',
+        'From' => trim($input_name_first . ' ' . $input_name_last) . ' Kontaktfomular <info@wintherlanden.com>',
         'Reply-To' => ($input_email ?: 'info@wintherlanden.com'),
         'X-Mailer' => 'PHP/' . phpversion()
     );
@@ -30,7 +30,7 @@ foreach ($recipients as $recipient) {
     <div class="row">
         <div class="form-group col-md-6">
             <label for="input_name_first"><?= ($lang == 'de' ? 'Vorname' : 'First name'); ?></label>
-            <input type="text" class="form-control" id="input_name_first" name="input_name_first" placeholder="">
+            <input type="text" class="form-control" id="input_name_first" name="input_name_first" value="<?=htmlentities($input_name_first);?>" placeholder="">
         </div>
         <div class="form-group col-md-6">
             <label for="input_name_last"><?= ($lang == 'de' ? 'Nachname' : 'Last name'); ?></label>
