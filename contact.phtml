@@ -30,6 +30,9 @@ if ($input_email) {
 
         mail($recipient, $subject, $message, $headers);
     }
+
+    echo ($lang == 'de' ? 'Vielen Dank für Ihre Nachricht.' : 'Contact');
+
 } else {
     ?>
 
