@@ -1,14 +1,14 @@
-    <h1><?= ($lang == 'de' ? 'Kontakt' : 'Contact'); ?>></h1>
+    <h1><?= ($lang == 'de' ? 'Kontakt' : 'Contact'); ?></h1>
 
     <form>
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                <label for="input_name_first"><?= ($lang == 'de' ? 'Vorname' : 'First name'); ?></label>
+                <input type="email" class="form-control" id="input_name_first" placeholder="">
             </div>
             <div class="form-group col-md-6">
-                <label for="inputPassword4">Password</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                <label for="input_name_last"><?= ($lang == 'de' ? 'Nachname' : 'Last name'); ?></label>
+                <input type="password" class="form-control" id="input_name_last" placeholder="">
             </div>
         </div>
         <div class="form-group">
