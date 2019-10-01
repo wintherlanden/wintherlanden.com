@@ -9,11 +9,6 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 
-echo "<pre>";
-echo json_encode($_SERVER, JSON_PRETTY_PRINT);
-echo "</pre>";
-die;
-
 if (strlen($_SESSION["lang"] ?? '') == 2) {
     $lang = $_SESSION["lang"];
 } else {
@@ -23,7 +18,10 @@ if (strlen($_SESSION["lang"] ?? '') == 2) {
 }
 
 $page = null;
-foreach ($_REQUEST as $k => $v) $page = $k;
+foreach ($_REQUEST as $k => $v) {
+    $page = $k;
+    break;
+}
 #$page = $_REQUEST['uri'];
 if ($page[0] == '/') {
     $page = substr($page, 1);
