@@ -14,10 +14,10 @@ $recipients = [
 ];
 foreach ($recipients as $recipient) {
     $subject = 'subject';
-    $message = 'test test';
+    $message = 'Kontaktformular: ' . $input_name_first . ' ' . $input_name_last . ' ' . substr($input_message, 0, 20);
     $headers = array(
         'From' => 'info@wintherlanden.com',
-        'Reply-To' => 'webmaster@example.com',
+        'Reply-To' => ($input_email ?: 'info@wintherlanden.com'),
         'X-Mailer' => 'PHP/' . phpversion()
     );
 
