@@ -19,30 +19,14 @@
         </div>
         <div class="form-group">
             <label for="input_message"><?= ($lang == 'de' ? 'Nachricht' : 'Message'); ?></label>
-            <input type="text" class="form-control" id="input_message" placeholder="">
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputCity">City</label>
-                <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                </select>
-            </div>
-            <div class="form-group col-md-2">
-                <label for="inputZip">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-            </div>
+            <textarea type="text" class="form-control" id="input_message" placeholder="" style="height: 100px;">
+            </textarea>
         </div>
         <div class="form-group">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                    Check me out
+                <input class="form-check-input" type="checkbox" id="input_checkbox">
+                <label class="form-check-label" for="input_checkbox">
+                    <?= ($lang == 'de' ? 'Ich erkläre mich mit der Verarbeitung der eingegebenen Daten sowie der Datenschutzerklärung einverstanden. *' : 'Message'); ?>
                 </label>
             </div>
         </div>
