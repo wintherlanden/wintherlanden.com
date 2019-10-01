@@ -8,26 +8,28 @@ $input_email = trim($_REQUEST['input_email'] ?? '');
 $input_phone = trim($_REQUEST['input_phone'] ?? '');
 $input_message = trim($_REQUEST['input_message'] ?? '');
 
-$input_name_first = $input_name_first ?: 'Kein Vorname';
-$input_name_last = $input_name_last ?: 'Kein Nachname';
-$input_email = $input_email ?: 'Keine E-Mail';
-$input_phone = $input_phone ?: 'Keine Telefonnummer';
-$input_message = $input_message ?: 'Keine Nachricht';
+if ($input_email) {
+    $input_name_first = $input_name_first ?: 'Kein Vorname';
+    $input_name_last = $input_name_last ?: 'Kein Nachname';
+    $input_email = $input_email ?: 'Keine E-Mail';
+    $input_phone = $input_phone ?: 'Keine Telefonnummer';
+    $input_message = $input_message ?: 'Keine Nachricht';
 
-$recipients = [
-    'info@wintherlanden.com',
-    'tobias.schulz@linux.com',
-];
-foreach ($recipients as $recipient) {
-    $subject = 'subject';
-    $message = 'Kontaktformular: ' . $input_name_first . ' ' . $input_name_last . ' ' . substr($input_message, 0, 20);
-    $headers = array(
-        'From' => trim($input_name_first . ' ' . $input_name_last) . ' Kontaktfomular <info@wintherlanden.com>',
-        'Reply-To' => ($input_email ?: 'info@wintherlanden.com'),
-        'X-Mailer' => 'PHP/' . phpversion()
-    );
+    $recipients = [
+        'info@wintherlanden.com',
+        'tobias.schulz@linux.com',
+    ];
+    foreach ($recipients as $recipient) {
+        $subject = 'subject';
+        $message = 'Kontaktformular: ' . $input_name_first . ' ' . $input_name_last . ' ' . substr($input_message, 0, 20);
+        $headers = array(
+            'From' => trim($input_name_first . ' ' . $input_name_last) . ' Kontaktfomular <info@wintherlanden.com>',
+            'Reply-To' => ($input_email ?: 'info@wintherlanden.com'),
+            'X-Mailer' => 'PHP/' . phpversion()
+        );
 
-    mail($recipient, $subject, $message, $headers);
+        mail($recipient, $subject, $message, $headers);
+    }
 }
 
 ?>
