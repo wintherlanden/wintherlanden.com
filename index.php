@@ -17,6 +17,7 @@ if (strlen($_SESSION["lang"] ?? '') == 2) {
     $lang = in_array($lang, $acceptLang) ? $lang : 'en';
 }
 
+$page = null;
 foreach ($_REQUEST as $k => $v) $page = $k;
 #$page = $_REQUEST['uri'];
 if ($page[0] == '/') {
