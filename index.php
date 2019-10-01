@@ -9,6 +9,11 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 
+echo "<pre>";
+echo json_encode($_SERVER, JSON_PRETTY_PRINT);
+echo "</pre>";
+die;
+
 if (strlen($_SESSION["lang"] ?? '') == 2) {
     $lang = $_SESSION["lang"];
 } else {
