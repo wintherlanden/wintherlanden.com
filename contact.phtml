@@ -5,18 +5,20 @@
 $input_name_first = $_REQUEST['input_name_first'];
 
 $recipients = [
-        
+    'info@wintherlanden.com',
+    'tobias.schulz@linux.com',
 ];
-$to      = 'nobody@example.com';
-$subject = 'the subject';
-$message = 'hello';
-$headers = array(
-    'From' => 'webmaster@example.com',
-    'Reply-To' => 'webmaster@example.com',
-    'X-Mailer' => 'PHP/' . phpversion()
-);
+foreach ($recipients as $recipient) {
+    $subject = 'subject';
+    $message = 'test test';
+    $headers = array(
+        'From' => 'info@wintherlanden.com',
+        'Reply-To' => 'webmaster@example.com',
+        'X-Mailer' => 'PHP/' . phpversion()
+    );
 
-mail($to, $subject, $message, $headers);
+    mail($recipient, $subject, $message, $headers);
+}
 
 ?>
 
