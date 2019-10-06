@@ -91,20 +91,16 @@
             top: 5px;
             right: 5px;
         }
-
         #language_icon_button {
 
         }
-
         #language_icon_button::after {
             border: none;
         }
-
         #language_icon_menu {
             position: relative;
             left: -150px;
         }
-
         #language_icon {
             height: 28px;
         }
@@ -124,6 +120,8 @@
 
         #cookie-bar {
             background: rgba(129, 139, 160, 1.0) !important;
+        }
+        #cookie-bar-main-privacy-link {
         }
     </style>
 
