@@ -122,6 +122,7 @@
             background: rgba(129, 139, 160, 1.0) !important;
         }
         #cookie-bar-main-privacy-link {
+            color: rgba(255, 255, 255, 1) !important;
         }
     </style>
 
