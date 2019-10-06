@@ -39,13 +39,15 @@
         #header_logo {
             height: 200px;
             width: 50vw;
-            margin-left: 25vw;
         }
 
         #header_logo img {
             height: 120px;
-            margin-top: 40px;
             max-width: 100vw;
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
         }
 
         #navbarNavWrapper {
