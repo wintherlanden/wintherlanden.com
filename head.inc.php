@@ -49,6 +49,12 @@
             object-fit: contain;
         }
 
+        @media screen and (max-width: 500px) {
+            #header_logo img {
+                margin: 10px auto 10px auto;
+            }
+        }
+
         #navbarNavWrapper {
             width: 750px;
             margin: 0 auto;
