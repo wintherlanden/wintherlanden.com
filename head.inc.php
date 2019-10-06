@@ -37,7 +37,6 @@
         }
 
         #header_logo {
-            height: 200px;
             display: flex;
             justify-content: center;
         }
@@ -45,7 +44,7 @@
         #header_logo img {
             height: 110px;
             max-width: 90vw;
-            margin-top: 45px;
+            margin: 45px auto 45px auto;
             display: block;
             object-fit: contain;
         }
