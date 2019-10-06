@@ -140,6 +140,11 @@
             margin-top: -2px;
         }
 
+        #image_biography {
+            margin-bottom: 50px;
+            object-fit: contain;
+        }
+
         #image_signature {
             height: 27px;
             margin-top: 15px;
