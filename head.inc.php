@@ -69,6 +69,7 @@
             -moz-box-shadow: 0 8px 6px -6px #999;
             box-shadow: 0 8px 6px -6px #999;
         }
+
         .navbar li a.nav-link {
             font-size: 15px;
             letter-spacing: 1px;
@@ -78,8 +79,9 @@
             display: flex;
             justify-content: center;
         }
+
         .navbar-light .navbar-toggler {
-            color: rgba(0,0,0,.5);
+            color: rgba(0, 0, 0, .5);
             margin: auto !important;
             width: 100% !important;
             border: none !important;
@@ -110,15 +112,19 @@
             top: 5px;
             right: 5px;
         }
+
         #language_icon_button {
         }
+
         #language_icon_button::after {
             border: none;
         }
+
         #language_icon_menu {
             position: relative;
             left: -150px;
         }
+
         #language_icon {
             height: 28px;
         }
@@ -140,6 +146,7 @@
         #cookie-bar {
             background: rgba(129, 139, 160, 1.0) !important;
         }
+
         #cookie-bar-main-privacy-link {
             color: rgba(255, 255, 255, 1) !important;
         }
@@ -163,6 +170,12 @@
             margin-left: 20px;
         }
 
+        @media (max-width: 576px) {
+            .container {
+                max-width: calc(100vw - 20px);
+            }
+        }
+
         @media screen and (max-width: 500px) {
 
             #header_logo img {
@@ -172,9 +185,11 @@
             #header_bar {
                 height: 26px;
             }
+
             #language_icon {
                 height: 20px;
             }
+
             #language_icon_holder {
                 top: 0px;
                 right: 0px;
@@ -183,6 +198,7 @@
             .navbar {
                 padding: .2rem 0.5rem;
             }
+
             .navbar-toggler-icon {
                 width: 1.1em;
                 height: 1.1em;
@@ -223,7 +239,7 @@ if (!$nolayout) {
 </div>
 
 <div id='header_logo'>
-    <img src="images/Schriftzug.png" />
+    <img src="images/Schriftzug.png"/>
 </div>
 
 <nav class="navbar navbar-expand-lg navbar-light">
@@ -232,28 +248,28 @@ if (!$nolayout) {
         <span class="navbar-toggler-icon"></span>
     </button>
     <div id="navbarNavWrapper">
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item <?= ($page == "home" ? "active" : ""); ?>">
-                <a class="nav-link" href="?home">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item <?= ($page == "gallery" ? "active" : ""); ?>">
-                <a class="nav-link" href="?gallery">Gallery</a>
-            </li>
-            <li class="nav-item <?= ($page == "biography" ? "active" : ""); ?>">
-                <a class="nav-link" href="?biography">Biography</a>
-            </li>
-            <li class="nav-item <?= ($page == "exhibitions" ? "active" : ""); ?>">
-                <a class="nav-link" href="?exhibitions">Exhibitions</a>
-            </li>
-            <li class="nav-item <?= ($page == "instagram" ? "active" : ""); ?>">
-                <a class="nav-link" href="?instagram">Instagram</a>
-            </li>
-            <li class="nav-item <?= ($page == "contact" ? "active" : ""); ?>">
-                <a class="nav-link" href="?contact">Contact</a>
-            </li>
-        </ul>
-    </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item <?= ($page == "home" ? "active" : ""); ?>">
+                    <a class="nav-link" href="?home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item <?= ($page == "gallery" ? "active" : ""); ?>">
+                    <a class="nav-link" href="?gallery">Gallery</a>
+                </li>
+                <li class="nav-item <?= ($page == "biography" ? "active" : ""); ?>">
+                    <a class="nav-link" href="?biography">Biography</a>
+                </li>
+                <li class="nav-item <?= ($page == "exhibitions" ? "active" : ""); ?>">
+                    <a class="nav-link" href="?exhibitions">Exhibitions</a>
+                </li>
+                <li class="nav-item <?= ($page == "instagram" ? "active" : ""); ?>">
+                    <a class="nav-link" href="?instagram">Instagram</a>
+                </li>
+                <li class="nav-item <?= ($page == "contact" ? "active" : ""); ?>">
+                    <a class="nav-link" href="?contact">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
