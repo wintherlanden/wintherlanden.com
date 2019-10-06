@@ -158,6 +158,10 @@
             .navbar {
                 padding: 0;
             }
+
+            .footer {
+                height: 26px;
+            }
         }
 
     </style>

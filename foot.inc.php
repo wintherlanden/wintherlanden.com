@@ -4,37 +4,6 @@ if (!$nolayout) {
 
     </div>
 
-    <style>
-        /* Sticky footer styles
-        -------------------------------------------------- */
-        html {
-            position: relative;
-            min-height: 100%;
-        }
-
-        body {
-            margin-bottom: 38px; /* Margin bottom by footer height */
-        }
-
-        .footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 38px; /* Set the fixed height of the footer here */
-            line-height: 38px; /* Vertically center the text there */
-            background: rgba(129, 139, 160, 0.63);
-        }
-
-        .footer .text-muted {
-            text-align: right;
-        }
-
-        .footer a {
-            color: rgba(255, 255, 255, 0.63);
-            margin-left: 20px;
-        }
-    </style>
-
     <footer class="footer">
         <div class="container">
             <div class="row">
