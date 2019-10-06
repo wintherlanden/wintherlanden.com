@@ -123,7 +123,7 @@
         }
 
         #cookie-bar {
-            background: rgba(129, 139, 160, 1.0);
+            background: rgba(129, 139, 160, 1.0) !important;
         }
     </style>
 
