@@ -181,7 +181,7 @@
         @media screen and (max-width: 500px) {
 
             body {
-                font-size: 0.9rem;
+                font-size: 0.8rem;
             }
 
             #header_logo img {
