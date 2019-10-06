@@ -15,6 +15,11 @@
           integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous"/>
 
     <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
         body {
             background: #ccc url("images/Hintergrund.jpg");
             background-size: 100%;
@@ -139,15 +144,6 @@
             color: rgba(255, 255, 255, 1) !important;
         }
 
-        /* Sticky footer styles
-        -------------------------------------------------- */
-        html {
-            position: relative;
-            min-height: 100%;
-        }
-
-        body {
-        }
 
         .footer {
             position: absolute;
@@ -190,6 +186,7 @@
 
             .footer {
                 height: 26px;
+                line-height: 26px;
             }
 
             body {
