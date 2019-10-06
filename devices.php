@@ -27,9 +27,10 @@ $devices = [
     ],
 ];
 
-foreach ($devices as $device) {
+foreach ($devices as $device_name => $device) {
     ?>
-    <iframe src="/?gallery" style="width: <?= $device['width']; ?>; height: <?= $device['height']; ?>;">
+    <h1><?=$device_name;?></h1>
+    <iframe src="/?gallery" style="width: <?= $device['width']; ?>; height: 600px; ?>;">
     </iframe>
     <?php
 }
