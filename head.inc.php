@@ -25,6 +25,10 @@
             font-family: 'Raleway', sans-serif;
         }
 
+        h1 {
+            
+        }
+
         h1, h2 {
             color: rgba(111, 128, 144, 1);
         }
