@@ -40,12 +40,12 @@
             height: 200px;
             width: 50vw;
             margin-left: 25vw;
-            max-width: 100vw;
         }
 
         #header_logo img {
             height: 120px;
             margin-top: 40px;
+            max-width: 100vw;
         }
 
         #navbarNavWrapper {
@@ -154,9 +154,7 @@ if (!$nolayout) {
 </div>
 
 <div id='header_logo'>
-    <center>
     <img src="images/Schriftzug.png" />
-    </center>
 </div>
 
 <nav class="navbar navbar-expand-lg navbar-light">
