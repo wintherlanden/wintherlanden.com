@@ -47,7 +47,8 @@
         }
 
         #header_logo img {
-            height: 100%;
+            height: 100px;
+            margin-top: 45px;
         }
 
         #navbarNavWrapper {
