@@ -11,7 +11,7 @@ $desired_width = 300;
 
 $dest_dir = __DIR__ . '/thumbnails/';
 @mkdir($dest_dir);
-$dest_filename = preg_replace('/[^a-zA-Z0-9]/', '', $src) . '.' . $desired_width . '.png';
+$dest_filename = strtolower(preg_replace('/[^a-zA-Z0-9]/', '', $src)) . '.' . $desired_width . '.png';
 $dest = $dest_dir . $dest_filename;
 
 if (!is_file($dest)) {
