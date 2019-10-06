@@ -146,9 +146,13 @@
 
             #header_bar {
                 height: 26px;
+            }
             #language_icon {
                 height: 20px;
             }
+            #language_icon_holder {
+                top: 3px;
+                right: 3px;
             }
         }
 
