@@ -102,7 +102,7 @@
         .main_container {
             background: rgba(255, 255, 255, 0.78);
             min-height: calc(100vh - 300px);
-            padding: 58px 20px 30px 20px;
+            padding: 58px 20px 80px 20px;
             color: rgba(132, 151, 168, 1);
             font-weight: 400;
         }
