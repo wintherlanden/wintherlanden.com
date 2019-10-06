@@ -181,7 +181,7 @@
             }
 
             .navbar {
-                padding: 0;
+                padding: .2rem 0.5rem;
             }
             .navbar-toggler-icon {
                 width: 1.1em;
