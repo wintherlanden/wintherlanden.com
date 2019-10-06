@@ -75,6 +75,8 @@
             font-weight: 400 !important;
             margin-left: 10px;
             margin-right: 10px;
+            display: flex;
+            justify-content: center;
         }
         .navbar-light .navbar-toggler {
             color: rgba(0,0,0,.5);
