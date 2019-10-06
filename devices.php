@@ -1,5 +1,11 @@
 <?php
 
+define('LN', "\n");
+header("X-Frame-Options: allow-from https://www.instagram.com/");
+header("Access-Control-Allow-Origin: *");
+header("Content-Security-Policy: frame-ancestors https://instagram.com https://www.wintherlanden.com");
+session_start();
+
 $devices = [
     'Desktop' => [
         'width' => 1200,
