@@ -19,6 +19,7 @@
             background: #ccc url("images/Hintergrund.jpg");
             background-size: 100%;
             overscroll-behavior: none;
+            margin-bottom: 38px; /* Margin bottom by footer height */
         }
 
         h1, h2, h3, h4, p, body {
@@ -138,6 +139,34 @@
             color: rgba(255, 255, 255, 1) !important;
         }
 
+        /* Sticky footer styles
+        -------------------------------------------------- */
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 38px; /* Set the fixed height of the footer here */
+            line-height: 38px; /* Vertically center the text there */
+            background: rgba(129, 139, 160, 0.63);
+        }
+
+        .footer .text-muted {
+            text-align: right;
+        }
+
+        .footer a {
+            color: rgba(255, 255, 255, 0.63);
+            margin-left: 20px;
+        }
+
         @media screen and (max-width: 500px) {
 
             #header_logo img {
@@ -162,6 +191,11 @@
             .footer {
                 height: 26px;
             }
+
+            body {
+                margin-bottom: 26px; /* Margin bottom by footer height */
+            }
+
         }
 
     </style>
