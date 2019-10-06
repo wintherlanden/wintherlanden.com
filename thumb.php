@@ -9,11 +9,9 @@ $src = __DIR__ . '/' . $_GET['src'];
 $desired_width = 300;
 
 
-$pInfo = pathinfo($src);
-// Save the new path using the current file name
 $dest_dir = __DIR__ . '/thumbnails/';
 @mkdir($dest_dir);
-$dest_filename = $pInfo['basename'] . '.' . $desired_width . '.png';
+$dest_filename = preg_replace('/[^a-zA-Z0-9]/', '', $src) . '.' . $desired_width . '.png';
 $dest = $dest_dir . $dest_filename;
 
 if (!is_file($dest)) {
