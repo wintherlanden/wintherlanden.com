@@ -183,6 +183,10 @@
             .navbar {
                 padding: 0;
             }
+            .navbar-toggler-icon {
+                width: 1.1em;
+                height: 1.1em;
+            }
 
             .footer {
                 height: 26px;
