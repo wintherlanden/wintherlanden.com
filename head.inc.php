@@ -44,7 +44,7 @@
         #header_logo img {
             height: 110px;
             max-width: 90vw;
-            margin: 45px auto 45px auto;
+            margin: min(45px, 10vw) auto min(45px, 10vw) auto;
             display: block;
             object-fit: contain;
         }
