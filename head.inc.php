@@ -16,7 +16,7 @@
 
     <style>
         body {
-            background: #ccc url("images/hintergrund.jpg");
+            background: #ccc url("images/Hintergrund.jpg");
             background-size: 100%;
             overscroll-behavior: none;
         }
