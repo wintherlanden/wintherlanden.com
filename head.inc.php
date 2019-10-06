@@ -178,6 +178,10 @@
 
         @media screen and (max-width: 500px) {
 
+            body {
+                font-size: 0.9rem;
+            }
+
             #header_logo img {
                 margin: 10px auto 10px auto;
             }
