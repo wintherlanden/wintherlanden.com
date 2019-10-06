@@ -40,10 +40,7 @@
             height: 200px;
             width: 50vw;
             margin-left: 25vw;
-            background: url("images/Schriftzug.png");
-            background-size: contain;
-            background-position: center center;
-            background-repeat: no-repeat;
+            max-width: 100vw;
         }
 
         #header_logo img {
