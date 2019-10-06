@@ -69,13 +69,18 @@
             -moz-box-shadow: 0 8px 6px -6px #999;
             box-shadow: 0 8px 6px -6px #999;
         }
-
         .navbar li a.nav-link {
             font-size: 15px;
             letter-spacing: 1px;
             font-weight: 400 !important;
             margin-left: 10px;
             margin-right: 10px;
+        }
+        .navbar-light .navbar-toggler {
+            color: rgba(0,0,0,.5);
+            margin: auto !important;
+            width: 100% !important;
+            border: none !important;
         }
 
         #header_bar {
