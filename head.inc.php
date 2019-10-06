@@ -47,6 +47,7 @@
             max-width: 90vw;
             margin-top: 45px;
             display: block;
+            object-fit: contain;
         }
 
         #navbarNavWrapper {
