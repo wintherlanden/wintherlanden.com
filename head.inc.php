@@ -43,9 +43,9 @@
         }
 
         #header_logo img {
-            height: 120px;
-            max-width: 100vw;
-            margin-top: 40px;
+            height: 110px;
+            max-width: 90vw;
+            margin-top: 45px;
             display: block;
         }
 
