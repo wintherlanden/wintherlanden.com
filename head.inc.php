@@ -113,7 +113,7 @@
         }
 
         #image_welcome {
-            height: 27px;
+            height: 22px;
             margin-bottom: 30px;
         }
 
