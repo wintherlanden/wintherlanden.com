@@ -121,6 +121,10 @@
         #image_signature {
             width: 30%;
         }
+
+        #cookie-bar {
+            background: rgba(129, 139, 160, 1.0);
+        }
     </style>
 
     <title>Wintherlanden</title>
