@@ -49,12 +49,6 @@
             object-fit: contain;
         }
 
-        @media screen and (max-width: 500px) {
-            #header_logo img {
-                margin: 10px auto 10px auto;
-            }
-        }
-
         #navbarNavWrapper {
             width: 750px;
             margin: 0 auto;
@@ -111,7 +105,6 @@
             right: 5px;
         }
         #language_icon_button {
-
         }
         #language_icon_button::after {
             border: none;
@@ -144,6 +137,21 @@
         #cookie-bar-main-privacy-link {
             color: rgba(255, 255, 255, 1) !important;
         }
+
+        @media screen and (max-width: 500px) {
+
+            #header_logo img {
+                margin: 10px auto 10px auto;
+            }
+
+            #header_bar {
+                height: 26px;
+            #language_icon {
+                height: 20px;
+            }
+            }
+        }
+
     </style>
 
     <title>Wintherlanden</title>
