@@ -219,7 +219,7 @@
             }
 
             #image_signature {
-                height: 25px;
+                height: 24px;
             }
 
             .footer {
