@@ -214,6 +214,14 @@
                 padding: 38px 30px 38px 30px;
             }
 
+            #image_welcome {
+                height: 22px;
+            }
+
+            #image_signature {
+                height: 25px;
+            }
+
             .footer {
                 height: 26px;
                 line-height: 26px;
