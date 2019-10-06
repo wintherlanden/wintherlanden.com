@@ -204,6 +204,10 @@
                 height: 1.1em;
             }
 
+            .main_container {
+                padding: 38px 20px 38px 20px;
+            }
+
             .footer {
                 height: 26px;
                 line-height: 26px;
