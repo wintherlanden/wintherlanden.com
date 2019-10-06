@@ -38,15 +38,14 @@
 
         #header_logo {
             height: 200px;
-            width: 50vw;
+            display: flex;
+            justify-content: center;
         }
 
         #header_logo img {
             height: 120px;
             max-width: 100vw;
             margin-top: 40px;
-            margin-left: auto;
-            margin-right: auto;
             display: block;
         }
 
