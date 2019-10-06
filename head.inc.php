@@ -211,7 +211,7 @@
             }
 
             .main_container {
-                padding: 38px 20px 38px 20px;
+                padding: 38px 30px 38px 30px;
             }
 
             .footer {
