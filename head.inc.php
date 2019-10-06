@@ -118,7 +118,8 @@
         }
 
         #image_signature {
-            width: 30%;
+            width: 23%;
+            margin-top: 10px;
         }
 
         #cookie-bar {
