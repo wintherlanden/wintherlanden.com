@@ -211,7 +211,7 @@
             }
 
             .main_container {
-                padding: 38px 30px 38px 30px;
+                padding: 38px 30px 188px 30px;
             }
 
             #image_welcome {
