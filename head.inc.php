@@ -143,6 +143,7 @@
             height: 27px;
             margin-top: 15px;
             object-fit: contain;
+            margin-bottom: -2px;
         }
 
         #cookie-bar {
