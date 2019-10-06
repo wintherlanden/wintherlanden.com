@@ -151,8 +151,12 @@
                 height: 20px;
             }
             #language_icon_holder {
-                top: 3px;
-                right: 3px;
+                top: 0px;
+                right: 0px;
+            }
+
+            .navbar {
+                padding: 0;
             }
         }
 
