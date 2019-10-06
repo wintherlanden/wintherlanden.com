@@ -14,7 +14,7 @@ $devices = [
         'width' => '1200px',
     ],
     'Tablet Landscape' => [
-        'width' => '800px',
+        'width' => '1000px',
     ],
     'Tablet Portrait' => [
         'width' => '620px',
