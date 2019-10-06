@@ -113,12 +113,12 @@
         }
 
         #image_welcome {
-            width: 39%;
+            height: 27px;
             margin-bottom: 30px;
         }
 
         #image_signature {
-            width: 23%;
+            height: 27px;
             margin-top: 10px;
         }
 
