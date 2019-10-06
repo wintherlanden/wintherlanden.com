@@ -239,7 +239,7 @@ if (!$nolayout) {
 </div>
 
 <div id='header_logo'>
-    <img src="images/Schriftzug.png"/>
+    <img src="images/Schriftzug.png" onclick="window.location.href='?home';" style="cursor: pointer;" />
 </div>
 
 <nav class="navbar navbar-expand-lg navbar-light">
