@@ -141,7 +141,7 @@
 
         #image_signature {
             height: 27px;
-            margin-top: 10px;
+            margin-top: 15px;
             object-fit: contain;
         }
 
