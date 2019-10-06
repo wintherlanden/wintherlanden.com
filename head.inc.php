@@ -141,7 +141,8 @@
         }
 
         #image_biography {
-            margin-bottom: 50px;
+            margin-top: 5px;
+            margin-bottom: 45px;
             object-fit: contain;
         }
 
