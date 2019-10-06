@@ -26,7 +26,6 @@
         }
 
         h1 {
-            
         }
 
         h1, h2 {
@@ -114,7 +113,7 @@
         }
 
         #image_welcome {
-            width: 50%;
+            width: 39%;
             margin-bottom: 30px;
         }
 
