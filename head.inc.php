@@ -172,7 +172,7 @@
 
         @media (max-width: 576px) {
             .container {
-                max-width: calc(100vw - 20px);
+                max-width: calc(100vw - 30px);
             }
         }
 
