@@ -8,28 +8,28 @@ session_start();
 
 $devices = [
     'Desktop' => [
-        'width' => 1200,
+        'width' => '99vw',
     ],
     'Small Laptop' => [
-        'width' => 1200,
+        'width' => '1200px',
     ],
     'Tablet Landscape' => [
-        'width' => 800,
+        'width' => '800px',
     ],
     'Tablet Portrait' => [
-        'width' => 620,
+        'width' => '620px',
     ],
     'Large Smartphone' => [
-        'width' => 570,
+        'width' => '570px',
     ],
     'Small Smartphone' => [
-        'width' => 300,
+        'width' => '300px',
     ],
 ];
 
 foreach ($devices as $device_name => $device) {
     ?>
-    <h1><?=$device_name;?></h1>
+    <h1><?= $device_name; ?></h1>
     <iframe src="/?gallery" style="width: <?= $device['width']; ?>; height: 600px; ?>;">
     </iframe>
     <?php
