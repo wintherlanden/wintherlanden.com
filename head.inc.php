@@ -136,11 +136,13 @@
         #image_welcome {
             height: 24px;
             margin-bottom: 30px;
+            object-fit: contain;
         }
 
         #image_signature {
             height: 27px;
             margin-top: 10px;
+            object-fit: contain;
         }
 
         #cookie-bar {
