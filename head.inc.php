@@ -159,7 +159,9 @@
         #cookie-bar-main-privacy-link {
             color: rgba(255, 255, 255, 1) !important;
         }
-        #
+        #cookie-bar-button {
+
+         }
 
 
         .footer {
