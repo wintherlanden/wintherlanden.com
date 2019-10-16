@@ -160,7 +160,7 @@
             color: rgba(255, 255, 255, 1) !important;
         }
         #cookie-bar-button {
-            background: white;
+            background-color: white;
         }
 
 
