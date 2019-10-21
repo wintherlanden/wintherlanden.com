@@ -182,6 +182,11 @@
             margin-left: 20px;
         }
 
+        .btn-primary {
+            background: rgba(129, 139, 160, 1.0) !important;
+            border: 1px solid black;
+        }
+
         @media (max-width: 576px) {
             .container {
                 max-width: calc(100vw - 30px);
