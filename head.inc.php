@@ -184,7 +184,8 @@
 
         .btn-primary {
             background: rgba(129, 139, 160, 1.0) !important;
-            border: 1px solid black;
+            border: none;
+            box-shadow: 2px 2px 5px rgba(0,0,0,.6);
         }
 
         @media (max-width: 576px) {
