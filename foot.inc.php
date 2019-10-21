@@ -9,8 +9,8 @@ if (!$nolayout) {
             <div class="row">
                 <div class="col-sm-12">
                     <div class="text-muted">
-                        <a href="?datenschutz">Datenschutz</a>
-                        <a href="?impressum">Impressum</a>
+                        <a href="?datenschutz"><?=($lang == 'de' ? 'Datenschutz' : 'Privacy Policy');?></a>
+                        <a href="?impressum"><?=($lang == 'de' ? 'Impressum' : 'About us');?></a>
                     </div>
                 </div>
             </div>
