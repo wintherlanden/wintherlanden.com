@@ -1,0 +1,423 @@
+    38482      8 -rw-r--r--   1 root     root         4861 Feb 22  2018 /etc/hdparm.conf
+      596      4 -rw-r--r--   1 root     root          726 Jan 17  2018 /etc/sysctl.d/10-kernel-hardening.conf
+      601      4 -rw-r--r--   1 root     root          506 Jan 17  2018 /etc/sysctl.d/10-zeropage.conf
+      598      4 -rw-r--r--   1 root     root         1184 Jan 17  2018 /etc/sysctl.d/10-magic-sysrq.conf
+      600      4 -rw-r--r--   1 root     root         1292 Jan 17  2018 /etc/sysctl.d/10-ptrace.conf
+    21439      0 lrwxrwxrwx   1 root     root           14 Sep 30 17:23 /etc/sysctl.d/99-sysctl.conf -> ../sysctl.conf
+      594      4 -rw-r--r--   1 root     root           77 Jan 17  2018 /etc/sysctl.d/10-console-messages.conf
+    42664      4 -rw-r--r--   1 root     root          153 Nov 23  2018 /etc/sysctl.d/10-lxd-inotify.conf
+      597      4 -rw-r--r--   1 root     root          257 Jan 17  2018 /etc/sysctl.d/10-link-restrictions.conf
+      599      4 -rw-r--r--   1 root     root          509 Jan 17  2018 /etc/sysctl.d/10-network-security.conf
+      595      4 -rw-r--r--   1 root     root          490 Jan 17  2018 /etc/sysctl.d/10-ipv6-privacy.conf
+    43166      4 -rw-r--r--   1 root     root          100 Jun 25  2018 /etc/sos.conf
+      621      4 -rw-r--r--   1 root     root         1260 Feb 26  2018 /etc/ucf.conf
+    11568      0 lrwxrwxrwx   1 root     root           39 Jul 14 06:04 /etc/resolv.conf -> ../run/systemd/resolve/stub-resolv.conf
+      365      4 -rw-r--r--   1 root     root          583 Jan 28  2018 /etc/modprobe.d/blacklist-rare-network.conf
+      363      4 -rw-r--r--   1 root     root          210 Jan 28  2018 /etc/modprobe.d/blacklist-firewire.conf
+      366      4 -rw-r--r--   1 root     root         1667 Nov 12  2018 /etc/modprobe.d/blacklist.conf
+    42688      4 -rw-r--r--   1 root     root          379 Jul  2  2018 /etc/modprobe.d/mdadm.conf
+      364      4 -rw-r--r--   1 root     root          697 Jan 28  2018 /etc/modprobe.d/blacklist-framebuffer.conf
+      367      4 -rw-r--r--   1 root     root          347 Jan 28  2018 /etc/modprobe.d/iwlwifi.conf
+      362      4 -rw-r--r--   1 root     root          325 Jan 28  2018 /etc/modprobe.d/blacklist-ath_pci.conf
+      347      4 -rw-r--r--   1 root     root          703 Aug 21  2017 /etc/logrotate.conf
+    12649      4 -rw-r--r--   1 root     root          866 Jul 30  2016 /etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf
+    12655      4 -rw-r--r--   1 root     root          866 Jul 30  2016 /etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf
+    12767      4 -rw-r--r--   1 root     root          225 Apr  5  2018 /etc/fonts/conf.avail/10-antialias.conf
+    12768      4 -rw-r--r--   1 root     root          484 Apr  5  2018 /etc/fonts/conf.avail/10-autohint.conf
+    12771      4 -rw-r--r--   1 root     root          461 Apr  5  2018 /etc/fonts/conf.avail/10-hinting-none.conf
+    13346      8 -rw-r--r--   1 root     root         7769 Apr  5  2018 /etc/fonts/conf.avail/65-nonlatin.conf
+    13037      4 -rw-r--r--   1 root     root          522 Apr  5  2018 /etc/fonts/conf.avail/11-lcdfilter-light.conf
+    12774      4 -rw-r--r--   1 root     root         2010 Apr  5  2018 /etc/fonts/conf.avail/10-scale-bitmap-fonts.conf
+    12663      4 -rw-r--r--   1 root     root         1509 Jul 30  2016 /etc/fonts/conf.avail/57-dejavu-sans-mono.conf
+    13351      4 -rw-r--r--   1 root     root          422 Apr  5  2018 /etc/fonts/conf.avail/80-delicious.conf
+    34763      4 -rw-r--r--   1 root     root         1857 Jul  1  2014 /etc/fonts/conf.avail/99-language-selector-zh.conf
+    12646      4 -rw-r--r--   1 root     root          874 Jul 30  2016 /etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf
+    12665      4 -rw-r--r--   1 root     root         1649 Jul 30  2016 /etc/fonts/conf.avail/57-dejavu-serif.conf
+    12664      4 -rw-r--r--   1 root     root         2011 Jul 30  2016 /etc/fonts/conf.avail/57-dejavu-sans.conf
+    13347      4 -rw-r--r--   1 root     root          672 Apr  5  2018 /etc/fonts/conf.avail/69-unifont.conf
+    12778      4 -rw-r--r--   1 root     root          490 Apr  5  2018 /etc/fonts/conf.avail/10-sub-pixel-vrgb.conf
+    12776      4 -rw-r--r--   1 root     root          489 Apr  5  2018 /etc/fonts/conf.avail/10-sub-pixel-rgb.conf
+    13337      8 -rw-r--r--   1 root     root         6362 Apr  5  2018 /etc/fonts/conf.avail/45-latin.conf
+    13342      4 -rw-r--r--   1 root     root         1765 Apr  5  2018 /etc/fonts/conf.avail/60-generic.conf
+     4617      4 -rw-r--r--   1 root     root          847 May  4 12:14 /etc/fonts/conf.avail/64-language-selector-prefer.conf
+    13350      4 -rw-r--r--   1 root     root           77 Apr  5  2018 /etc/fonts/conf.avail/70-yes-bitmaps.conf
+    12660      4 -rw-r--r--   1 root     root          856 Jul 30  2016 /etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf
+    34761      4 -rw-r--r--   1 root     root         1737 Oct 30  2017 /etc/fonts/conf.avail/69-language-selector-zh-sg.conf
+    12773      4 -rw-r--r--   1 root     root          491 Apr  5  2018 /etc/fonts/conf.avail/10-no-sub-pixel.conf
+     2475      4 -rw-r--r--   1 root     root          819 Apr  7  2019 /etc/fonts/conf.avail/69-language-selector-ja.conf
+    12770      4 -rw-r--r--   1 root     root          463 Apr  5  2018 /etc/fonts/conf.avail/10-hinting-medium.conf
+    12647      4 -rw-r--r--   1 root     root          864 Jul 30  2016 /etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf
+    13338      4 -rw-r--r--   1 root     root          545 Apr  5  2018 /etc/fonts/conf.avail/49-sansserif.conf
+    13344     12 -rw-r--r--   1 root     root        10118 Apr  5  2018 /etc/fonts/conf.avail/65-fonts-persian.conf
+    34755     16 -rw-r--r--   1 root     root        16016 Nov  9  2017 /etc/fonts/conf.avail/30-cjk-aliases.conf
+    12667      4 -rw-r--r--   1 root     root         2063 Jul 30  2016 /etc/fonts/conf.avail/58-dejavu-lgc-sans.conf
+    12666      4 -rw-r--r--   1 root     root         1545 Jul 30  2016 /etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf
+    34760      4 -rw-r--r--   1 root     root         1636 Oct 30  2017 /etc/fonts/conf.avail/69-language-selector-zh-mo.conf
+    13340      4 -rw-r--r--   1 root     root          189 Apr  5  2018 /etc/fonts/conf.avail/51-local.conf
+    13038      4 -rw-r--r--   1 root     root         1259 Apr  5  2018 /etc/fonts/conf.avail/20-unhint-small-vera.conf
+    13348      4 -rw-r--r--   1 root     root          263 Apr  5  2018 /etc/fonts/conf.avail/70-force-bitmaps.conf
+    13341      4 -rw-r--r--   1 root     root          611 Apr  5  2018 /etc/fonts/conf.avail/53-monospace-lcd-filter.conf
+    13331      8 -rw-r--r--   1 root     root         5388 Apr  5  2018 /etc/fonts/conf.avail/40-nonlatin.conf
+    13332      4 -rw-r--r--   1 root     root         3248 Apr  5  2018 /etc/fonts/conf.avail/45-generic.conf
+    12769      4 -rw-r--r--   1 root     root          461 Apr  5  2018 /etc/fonts/conf.avail/10-hinting-full.conf
+    13343      4 -rw-r--r--   1 root     root         1833 Apr  5  2018 /etc/fonts/conf.avail/60-latin.conf
+    13036      4 -rw-r--r--   1 root     root          524 Apr  5  2018 /etc/fonts/conf.avail/11-lcdfilter-legacy.conf
+    13352      4 -rw-r--r--   1 root     root         1691 Apr  5  2018 /etc/fonts/conf.avail/90-synthetic.conf
+    12779      4 -rw-r--r--   1 root     root          481 Apr  5  2018 /etc/fonts/conf.avail/10-unhinted.conf
+    12668      4 -rw-r--r--   1 root     root         1689 Jul 30  2016 /etc/fonts/conf.avail/58-dejavu-lgc-serif.conf
+    13035      4 -rw-r--r--   1 root     root          526 Apr  5  2018 /etc/fonts/conf.avail/11-lcdfilter-default.conf
+     4621      4 -rw-r--r--   1 root     root         1551 May  4 12:11 /etc/fonts/conf.avail/69-language-selector-zh-hk.conf
+    12775      4 -rw-r--r--   1 root     root          489 Apr  5  2018 /etc/fonts/conf.avail/10-sub-pixel-bgr.conf
+    13349      4 -rw-r--r--   1 root     root          263 Apr  5  2018 /etc/fonts/conf.avail/70-no-bitmaps.conf
+    12662      4 -rw-r--r--   1 root     root          858 Jul 30  2016 /etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf
+    34762      4 -rw-r--r--   1 root     root         2120 Oct 30  2017 /etc/fonts/conf.avail/69-language-selector-zh-tw.conf
+    13339      4 -rw-r--r--   1 root     root          673 Apr  5  2018 /etc/fonts/conf.avail/50-user.conf
+    12772      4 -rw-r--r--   1 root     root          463 Apr  5  2018 /etc/fonts/conf.avail/10-hinting-slight.conf
+    13330     16 -rw-r--r--   1 root     root        13013 Apr  5  2018 /etc/fonts/conf.avail/30-metric-aliases.conf
+    13039      4 -rw-r--r--   1 root     root         3256 Apr  5  2018 /etc/fonts/conf.avail/25-unhint-nonlatin.conf
+    13345      4 -rw-r--r--   1 root     root          289 Apr  5  2018 /etc/fonts/conf.avail/65-khmer.conf
+    12777      4 -rw-r--r--   1 root     root          490 Apr  5  2018 /etc/fonts/conf.avail/10-sub-pixel-vbgr.conf
+    34758      4 -rw-r--r--   1 root     root         1737 Oct 30  2017 /etc/fonts/conf.avail/69-language-selector-zh-cn.conf
+    13354      4 -rw-r--r--   1 root     root         2582 Apr  5  2018 /etc/fonts/fonts.conf
+    12671      0 lrwxrwxrwx   1 root     root           51 Aug 16  2016 /etc/fonts/conf.d/20-unhint-small-dejavu-lgc-serif.conf -> ../conf.avail/20-unhint-small-dejavu-lgc-serif.conf
+    12672      0 lrwxrwxrwx   1 root     root           51 Aug 16  2016 /etc/fonts/conf.d/20-unhint-small-dejavu-sans-mono.conf -> ../conf.avail/20-unhint-small-dejavu-sans-mono.conf
+    13357      0 lrwxrwxrwx   1 root     root           31 Apr  5  2018 /etc/fonts/conf.d/10-antialias.conf -> ../conf.avail/10-antialias.conf
+    13372      0 lrwxrwxrwx   1 root     root           30 Apr  5  2018 /etc/fonts/conf.d/65-nonlatin.conf -> ../conf.avail/65-nonlatin.conf
+    13359      0 lrwxrwxrwx   1 root     root           40 Apr  5  2018 /etc/fonts/conf.d/10-scale-bitmap-fonts.conf -> ../conf.avail/10-scale-bitmap-fonts.conf
+    12685      0 lrwxrwxrwx   1 root     root           38 Aug 16  2016 /etc/fonts/conf.d/57-dejavu-sans-mono.conf -> ../conf.avail/57-dejavu-sans-mono.conf
+    13375      0 lrwxrwxrwx   1 root     root           31 Apr  5  2018 /etc/fonts/conf.d/80-delicious.conf -> ../conf.avail/80-delicious.conf
+    13946      0 lrwxrwxrwx   1 root     root           42 Jun 28 19:12 /etc/fonts/conf.d/99-language-selector-zh.conf -> ../conf.avail/99-language-selector-zh.conf
+    12669      0 lrwxrwxrwx   1 root     root           55 Aug 16  2016 /etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans-mono.conf -> ../conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf
+    12687      0 lrwxrwxrwx   1 root     root           34 Aug 16  2016 /etc/fonts/conf.d/57-dejavu-serif.conf -> ../conf.avail/57-dejavu-serif.conf
+    12686      0 lrwxrwxrwx   1 root     root           33 Aug 16  2016 /etc/fonts/conf.d/57-dejavu-sans.conf -> ../conf.avail/57-dejavu-sans.conf
+    13373      0 lrwxrwxrwx   1 root     root           29 Apr  5  2018 /etc/fonts/conf.d/69-unifont.conf -> ../conf.avail/69-unifont.conf
+    13365      0 lrwxrwxrwx   1 root     root           27 Apr  5  2018 /etc/fonts/conf.d/45-latin.conf -> ../conf.avail/45-latin.conf
+    13369      0 lrwxrwxrwx   1 root     root           29 Apr  5  2018 /etc/fonts/conf.d/60-generic.conf -> ../conf.avail/60-generic.conf
+    13932      0 lrwxrwxrwx   1 root     root           46 Jun 28 19:12 /etc/fonts/conf.d/64-language-selector-prefer.conf -> ../conf.avail/64-language-selector-prefer.conf
+    12673      0 lrwxrwxrwx   1 root     root           46 Aug 16  2016 /etc/fonts/conf.d/20-unhint-small-dejavu-sans.conf -> ../conf.avail/20-unhint-small-dejavu-sans.conf
+    13942      0 lrwxrwxrwx   1 root     root           45 Jun 28 19:12 /etc/fonts/conf.d/69-language-selector-zh-sg.conf -> ../conf.avail/69-language-selector-zh-sg.conf
+    13934      0 lrwxrwxrwx   1 root     root           42 Jun 28 19:12 /etc/fonts/conf.d/69-language-selector-ja.conf -> ../conf.avail/69-language-selector-ja.conf
+    12670      0 lrwxrwxrwx   1 root     root           50 Aug 16  2016 /etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans.conf -> ../conf.avail/20-unhint-small-dejavu-lgc-sans.conf
+    13366      0 lrwxrwxrwx   1 root     root           31 Apr  5  2018 /etc/fonts/conf.d/49-sansserif.conf -> ../conf.avail/49-sansserif.conf
+    13371      0 lrwxrwxrwx   1 root     root           35 Apr  5  2018 /etc/fonts/conf.d/65-fonts-persian.conf -> ../conf.avail/65-fonts-persian.conf
+    13930      0 lrwxrwxrwx   1 root     root           33 Jun 28 19:12 /etc/fonts/conf.d/30-cjk-aliases.conf -> ../conf.avail/30-cjk-aliases.conf
+    12756      0 lrwxrwxrwx   1 root     root           37 Aug 16  2016 /etc/fonts/conf.d/58-dejavu-lgc-sans.conf -> ../conf.avail/58-dejavu-lgc-sans.conf
+    12754      0 lrwxrwxrwx   1 root     root           42 Aug 16  2016 /etc/fonts/conf.d/58-dejavu-lgc-sans-mono.conf -> ../conf.avail/58-dejavu-lgc-sans-mono.conf
+    13940      0 lrwxrwxrwx   1 root     root           45 Jun 28 19:12 /etc/fonts/conf.d/69-language-selector-zh-mo.conf -> ../conf.avail/69-language-selector-zh-mo.conf
+    13368      0 lrwxrwxrwx   1 root     root           27 Apr  5  2018 /etc/fonts/conf.d/51-local.conf -> ../conf.avail/51-local.conf
+    13361      0 lrwxrwxrwx   1 root     root           39 Apr  5  2018 /etc/fonts/conf.d/20-unhint-small-vera.conf -> ../conf.avail/20-unhint-small-vera.conf
+    13363      0 lrwxrwxrwx   1 root     root           30 Apr  5  2018 /etc/fonts/conf.d/40-nonlatin.conf -> ../conf.avail/40-nonlatin.conf
+    13364      0 lrwxrwxrwx   1 root     root           29 Apr  5  2018 /etc/fonts/conf.d/45-generic.conf -> ../conf.avail/45-generic.conf
+    13370      0 lrwxrwxrwx   1 root     root           27 Apr  5  2018 /etc/fonts/conf.d/60-latin.conf -> ../conf.avail/60-latin.conf
+    13376      0 lrwxrwxrwx   1 root     root           31 Apr  5  2018 /etc/fonts/conf.d/90-synthetic.conf -> ../conf.avail/90-synthetic.conf
+    12757      0 lrwxrwxrwx   1 root     root           38 Aug 16  2016 /etc/fonts/conf.d/58-dejavu-lgc-serif.conf -> ../conf.avail/58-dejavu-lgc-serif.conf
+    13360      0 lrwxrwxrwx   1 root     root           39 Apr  5  2018 /etc/fonts/conf.d/11-lcdfilter-default.conf -> ../conf.avail/11-lcdfilter-default.conf
+    13938      0 lrwxrwxrwx   1 root     root           45 Jun 28 19:12 /etc/fonts/conf.d/69-language-selector-zh-hk.conf -> ../conf.avail/69-language-selector-zh-hk.conf
+    13374      0 lrwxrwxrwx   1 root     root           32 Apr  5  2018 /etc/fonts/conf.d/70-no-bitmaps.conf -> ../conf.avail/70-no-bitmaps.conf
+    12674      0 lrwxrwxrwx   1 root     root           47 Aug 16  2016 /etc/fonts/conf.d/20-unhint-small-dejavu-serif.conf -> ../conf.avail/20-unhint-small-dejavu-serif.conf
+    13944      0 lrwxrwxrwx   1 root     root           45 Jun 28 19:12 /etc/fonts/conf.d/69-language-selector-zh-tw.conf -> ../conf.avail/69-language-selector-zh-tw.conf
+    13367      0 lrwxrwxrwx   1 root     root           26 Apr  5  2018 /etc/fonts/conf.d/50-user.conf -> ../conf.avail/50-user.conf
+    13358      0 lrwxrwxrwx   1 root     root           36 Apr  5  2018 /etc/fonts/conf.d/10-hinting-slight.conf -> ../conf.avail/10-hinting-slight.conf
+    13362      0 lrwxrwxrwx   1 root     root           36 Apr  5  2018 /etc/fonts/conf.d/30-metric-aliases.conf -> ../conf.avail/30-metric-aliases.conf
+    13936      0 lrwxrwxrwx   1 root     root           45 Jun 28 19:12 /etc/fonts/conf.d/69-language-selector-zh-cn.conf -> ../conf.avail/69-language-selector-zh-cn.conf
+   259169      4 -rw-r--r--   1 root     root          804 Jun  4 16:48 /etc/apache2/conf-available/php7.2-fpm.conf
+    11631      4 -rw-r--r--   1 root     root          144 Jul 14 06:08 /etc/kernel-img.conf
+    34725      4 -rw-r--r--   1 root     root          917 Dec 18  2017 /etc/dbus-1/system.d/org.freedesktop.Accounts.conf
+    42782      4 -rw-r--r--   1 root     root          632 Jan 15  2019 /etc/dbus-1/system.d/org.freedesktop.PolicyKit1.conf
+    40200      4 -rw-r--r--   1 root     root          652 Feb 16  2018 /etc/dbus-1/system.d/dnsmasq.conf
+    43144      4 -rw-r--r--   1 root     root          662 May  2  2018 /etc/dbus-1/system.d/com.ubuntu.SoftwareProperties.conf
+    34752      4 -rw-r--r--   1 root     root          733 Nov  4  2013 /etc/dbus-1/system.d/com.ubuntu.LanguageSelector.conf
+    43308      8 -rw-r--r--   1 root     root         6920 Sep 20  2018 /etc/overlayroot.conf
+    12765      4 -rw-r--r--   1 root     root          108 Aug 28 20:33 /etc/rsyslog.d/1-iredmail-openldap.conf
+    17957      4 -rw-r--r--   1 root     root          443 Aug 28 21:02 /etc/rsyslog.d/1-iredmail-mlmmjadmin.conf
+     7790      4 -rw-r--r--   1 root     root          414 Aug 28 21:02 /etc/rsyslog.d/1-iredmail-iredapd.conf
+      798      4 -rw-r--r--   1 root     root          124 Aug 28 21:02 /etc/rsyslog.d/1-iredmail-phpfpm.conf
+    17942      4 -rw-r--r--   1 root     root          850 Aug 28 21:02 /etc/rsyslog.d/1-iredmail-dovecot.conf
+    15723      4 -rw-r--r--   1 root     root          242 Oct 11  2018 /etc/rsyslog.d/postfix.conf
+    38189      4 -rw-r--r--   1 root     root          314 Aug 15  2017 /etc/rsyslog.d/20-ufw.conf
+    82216      4 -rw-r--r--   1 root     root          255 May 11 07:17 /etc/rsyslog.d/21-cloudinit.conf
+    18823      4 -rw-r--r--   1 root     root         1125 Aug 28 21:02 /etc/rsyslog.d/50-default.conf
+    35589      4 -rw-r--r--   1 root     root          280 Jun 20  2014 /etc/fuse.conf
+    38776     16 -rw-r--r--   1 root     root        14867 Oct 13  2016 /etc/ltrace.conf
+      277      4 -rw-r--r--   1 root     root         2584 Feb  1  2018 /etc/gai.conf
+    43067      4 -rw-r--r--   1 root     root          114 Jan 29  2019 /etc/apt/apt.conf.d/20snapd.conf
+    43760      4 -rw-r--r--   1 root     root          350 Jul 14 06:07 /etc/popularity-contest.conf
+      423      4 -rw-r--r--   1 root     root         1358 Jan 30  2018 /etc/rsyslog.conf
+    19091     12 -rw-r--r--   1 root     root        10368 Apr  5  2017 /etc/sensors3.conf
+    21437      0 lrwxrwxrwx   1 root     root           10 Sep 30 17:23 /etc/modules-load.d/modules.conf -> ../modules
+   513663      4 -rw-r--r--   1 root     root           15 Aug 28 21:02 /etc/spamassassin/razor.conf
+      605      4 -rw-r--r--   1 root     root         1022 Apr 20  2018 /etc/systemd/logind.conf
+      613      4 -rw-r--r--   1 root     root         1658 Apr 20  2018 /etc/systemd/system.conf
+   390231      4 -rw-r--r--   1 root     root           28 Aug 28 21:02 /etc/systemd/system/netdata.service.d/limits.conf
+      616      4 -rw-r--r--   1 root     root         1130 Jan 28  2018 /etc/systemd/user.conf
+      614      4 -rw-r--r--   1 root     root          604 Apr 20  2018 /etc/systemd/timesyncd.conf
+      604      4 -rw-r--r--   1 root     root         1027 Apr 20  2018 /etc/systemd/journald.conf
+      607      4 -rw-r--r--   1 root     root          601 Apr 20  2018 /etc/systemd/resolved.conf
+     1882      4 -rw-r--r--   1 root     root           56 Oct 15 21:35 /etc/chkrootkit.conf
+    42272      4 -rw-r--r--   1 root     root         2301 Apr 12  2018 /etc/lvm/lvmlocal.conf
+    42271     96 -rw-r--r--   1 root     root        94404 Apr 12  2018 /etc/lvm/lvm.conf
+   258480      4 -rw-r--r--   1 root     root         1757 Jan 12  2018 /etc/init/mysql.conf
+   258638      4 -rw-r--r--   1 root     root         1875 Aug 29 06:52 /etc/init/docker.conf
+   259171      4 -rw-r--r--   1 root     root          448 Jun  4 16:48 /etc/init/php7.2-fpm.conf
+      340      4 -rw-r--r--   1 root     root          191 Feb  8  2018 /etc/libaudit.conf
+      337      4 -rw-r--r--   1 root     root           44 Jan 27  2016 /etc/ld.so.conf.d/libc.conf
+      338      4 -rw-r--r--   1 root     root          100 Apr 16  2018 /etc/ld.so.conf.d/x86_64-linux-gnu.conf
+      639      4 -rw-r--r--   1 root     root          414 Mar 23  2018 /etc/xdg/user-dirs.conf
+      335      4 -rw-r--r--   1 root     root           34 Jan 27  2016 /etc/ld.so.conf
+   519680      4 -r-x------   1 dovecot  dovecot       515 Aug 28 21:02 /etc/dovecot/dovecot-share-folder.conf
+   518986      4 -rw-r--r--   1 root     root         1893 Oct  5  2017 /etc/dovecot/conf.d/10-director.conf
+   518988     20 -rw-r--r--   1 root     root        17244 Aug 14 17:33 /etc/dovecot/conf.d/10-mail.conf
+   518995      4 -rw-r--r--   1 root     root          292 Jun 23  2017 /etc/dovecot/conf.d/90-plugin.conf
+   518993      4 -rw-r--r--   1 root     root         2808 Jun 23  2017 /etc/dovecot/conf.d/15-mailboxes.conf
+   518989      4 -rw-r--r--   1 root     root         3383 Jun 23  2017 /etc/dovecot/conf.d/10-master.conf
+   519334     12 -rw-r--r--   1 root     root        10726 Aug 14 17:33 /etc/dovecot/conf.d/90-sieve.conf
+   518994      4 -rw-r--r--   1 root     root          676 Jun 23  2017 /etc/dovecot/conf.d/90-acl.conf
+   518987      4 -rw-r--r--   1 root     root         3062 Oct  5  2017 /etc/dovecot/conf.d/10-logging.conf
+   518985      8 -rw-r--r--   1 root     root         5296 Jun 23  2017 /etc/dovecot/conf.d/10-auth.conf
+   518996      4 -rw-r--r--   1 root     root         2597 Jun 23  2017 /etc/dovecot/conf.d/90-quota.conf
+   518992      4 -rw-r--r--   1 root     root         1668 Jun 23  2017 /etc/dovecot/conf.d/15-lda.conf
+   519335      4 -rw-r--r--   1 root     root         1829 Aug 14 17:33 /etc/dovecot/conf.d/90-sieve-extprograms.conf
+   518991      4 -rw-r--r--   1 root     root          291 Aug 14 17:33 /etc/dovecot/conf.d/10-tcpwrapper.conf
+   519382      8 -rw-r--r--   1 root     root         4235 Oct  5  2017 /etc/dovecot/conf.d/20-imap.conf
+   519427      4 -rw-r--r--   1 root     root         2398 Aug 14 17:33 /etc/dovecot/conf.d/20-managesieve.conf
+   518990      4 -rw-r--r--   1 root     root         2329 Aug 14 17:33 /etc/dovecot/conf.d/10-ssl.conf
+   519354      4 -rw-r--r--   1 root     root         4065 Jun 23  2017 /etc/dovecot/conf.d/20-pop3.conf
+   519200      4 -rw-r--r--   1 root     root          936 Jun 23  2017 /etc/dovecot/conf.d/20-lmtp.conf
+   519540      4 -r-x------   1 dovecot  dovecot       344 Aug 28 21:02 /etc/dovecot/dovecot-used-quota.conf
+      296      4 -rw-r--r--   1 root     root         1646 Jan  5  2018 /etc/initramfs-tools/initramfs.conf
+      309      4 -rw-r--r--   1 root     root          378 Jan  5  2018 /etc/initramfs-tools/update-initramfs.conf
+    36102     12 -rw-------   1 root     root        11966 Dec 12  2018 /etc/iscsi/iscsid.conf
+      268      4 -rw-r--r--   1 root     root         1735 Oct 12  2017 /etc/dhcp/dhclient.conf
+      260      4 -rw-r--r--   1 root     root           31 Jan 28  2018 /etc/depmod.d/ubuntu.conf
+    43235      4 -rw-r--r--   1 root     root          479 Oct 10  2018 /etc/vmware-tools/tools.conf
+    43248      4 -rw-r--r--   1 root     root           60 Oct 10  2018 /etc/vmware-tools/vgauth.conf
+    43226      4 -rw-r--r--   1 root     root          453 Oct 10  2018 /etc/vmware-tools/guestproxy-ssl.conf
+   258474      0 lrwxrwxrwx   1 root     root           56 Aug  1 17:33 /etc/nginx/modules-enabled/50-mod-http-dav-ext.conf -> /usr/share/nginx/modules-available/mod-http-dav-ext.conf
+   258476      4 lrwxrwxrwx   1 root     root           60 Aug  1 17:34 /etc/nginx/modules-enabled/50-mod-http-xslt-filter.conf -> /usr/share/nginx/modules-available/mod-http-xslt-filter.conf
+   258473      0 lrwxrwxrwx   1 root     root           57 Aug  1 17:33 /etc/nginx/modules-enabled/50-mod-http-auth-pam.conf -> /usr/share/nginx/modules-available/mod-http-auth-pam.conf
+   258472      4 lrwxrwxrwx   1 root     root           60 Aug  1 17:33 /etc/nginx/modules-enabled/50-mod-http-subs-filter.conf -> /usr/share/nginx/modules-available/mod-http-subs-filter.conf
+   258477      4 lrwxrwxrwx   1 root     root           62 Aug  1 17:34 /etc/nginx/modules-enabled/50-mod-http-upstream-fair.conf -> /usr/share/nginx/modules-available/mod-http-upstream-fair.conf
+   258471      4 lrwxrwxrwx   1 root     root           61 Aug  1 17:33 /etc/nginx/modules-enabled/50-mod-http-image-filter.conf -> /usr/share/nginx/modules-available/mod-http-image-filter.conf
+   258475      0 lrwxrwxrwx   1 root     root           48 Aug  1 17:33 /etc/nginx/modules-enabled/50-mod-mail.conf -> /usr/share/nginx/modules-available/mod-mail.conf
+   258760      0 lrwxrwxrwx   1 root     root           53 Aug  1 17:34 /etc/nginx/modules-enabled/50-mod-http-echo.conf -> /usr/share/nginx/modules-available/mod-http-echo.conf
+   258478      0 lrwxrwxrwx   1 root     root           54 Aug  1 17:34 /etc/nginx/modules-enabled/50-mod-http-geoip.conf -> /usr/share/nginx/modules-available/mod-http-geoip.conf
+   258637      0 lrwxrwxrwx   1 root     root           50 Aug  1 17:34 /etc/nginx/modules-enabled/50-mod-stream.conf -> /usr/share/nginx/modules-available/mod-stream.conf
+   513492      4 -rw-r--r--   1 root     root           13 Aug 28 21:02 /etc/nginx/conf-available/sendfile.conf
+   513527      4 -rw-r--r--   1 root     root           31 Aug 28 21:02 /etc/nginx/conf-available/mime_types.conf
+   513493      4 -rw-r--r--   1 root     root           47 Aug 28 21:02 /etc/nginx/conf-available/server_tokens.conf
+   513488      4 -rw-r--r--   1 root     root          350 Sep 29 18:50 /etc/nginx/conf-available/headers.conf
+   513491      0 -rw-r--r--   1 root     root            0 Aug 28 21:25 /etc/nginx/conf-available/php-fpm.conf
+   513485      4 -rw-r--r--   1 root     root           26 Aug 28 21:02 /etc/nginx/conf-available/client_max_body_size.conf
+   513484      4 -rw-r--r--   1 root     root          205 Aug 28 21:02 /etc/nginx/conf-available/cache.conf
+   513483      4 -rw-r--r--   1 root     root           27 Aug 28 21:02 /etc/nginx/conf-available/0-general.conf
+   513486      4 -rw-r--r--   1 root     root           39 Aug 28 21:02 /etc/nginx/conf-available/default_type.conf
+   513487      4 -rw-r--r--   1 root     root          317 Aug 28 21:02 /etc/nginx/conf-available/gzip.conf
+   513489      4 -rw-r--r--   1 root     root           80 Aug 28 21:18 /etc/nginx/conf-available/log.conf
+   513494      4 -rw-r--r--   1 root     root           26 Aug 28 21:02 /etc/nginx/conf-available/types_hash_max_size.conf
+   258856      4 -rw-r--r--   1 root     root          217 Apr  6  2018 /etc/nginx/snippets/snakeoil.conf
+   258855      4 -rw-r--r--   1 root     root          422 Apr  6  2018 /etc/nginx/snippets/fastcgi-php.conf
+   258651      4 -rw-r--r--   1 root     root          691 Aug 28 21:21 /etc/nginx/nginx.conf
+   513503      0 lrwxrwxrwx   1 root     root           39 Aug 28 21:02 /etc/nginx/conf-enabled/sendfile.conf -> /etc/nginx/conf-available/sendfile.conf
+   513502      0 lrwxrwxrwx   1 root     root           41 Aug 28 21:02 /etc/nginx/conf-enabled/mime_types.conf -> /etc/nginx/conf-available/mime_types.conf
+   513504      0 lrwxrwxrwx   1 root     root           44 Aug 28 21:02 /etc/nginx/conf-enabled/server_tokens.conf -> /etc/nginx/conf-available/server_tokens.conf
+   513500      0 lrwxrwxrwx   1 root     root           38 Aug 28 21:02 /etc/nginx/conf-enabled/headers.conf -> /etc/nginx/conf-available/headers.conf
+   513506      0 lrwxrwxrwx   1 root     root           38 Aug 28 21:02 /etc/nginx/conf-enabled/php-fpm.conf -> /etc/nginx/conf-available/php-fpm.conf
+   513497      0 lrwxrwxrwx   1 root     root           51 Aug 28 21:02 /etc/nginx/conf-enabled/client_max_body_size.conf -> /etc/nginx/conf-available/client_max_body_size.conf
+   513496      0 lrwxrwxrwx   1 root     root           36 Aug 28 21:02 /etc/nginx/conf-enabled/cache.conf -> /etc/nginx/conf-available/cache.conf
+   513495      0 lrwxrwxrwx   1 root     root           40 Aug 28 21:02 /etc/nginx/conf-enabled/0-general.conf -> /etc/nginx/conf-available/0-general.conf
+   513498      0 lrwxrwxrwx   1 root     root           43 Aug 28 21:02 /etc/nginx/conf-enabled/default_type.conf -> /etc/nginx/conf-available/default_type.conf
+   513499      0 lrwxrwxrwx   1 root     root           35 Aug 28 21:02 /etc/nginx/conf-enabled/gzip.conf -> /etc/nginx/conf-available/gzip.conf
+   521130      0 lrwxrwxrwx   1 root     root           34 Aug 28 21:17 /etc/nginx/conf-enabled/log.conf -> /etc/nginx/conf-available/log.conf
+   513505      0 lrwxrwxrwx   1 root     root           50 Aug 28 21:02 /etc/nginx/conf-enabled/types_hash_max_size.conf -> /etc/nginx/conf-available/types_hash_max_size.conf
+   258841      4 -rw-r--r--   1 root     root         1077 Apr  6  2018 /etc/nginx/fastcgi.conf
+   130455      4 -rw-r--r--   1 root     root          688 Jul 14 06:10 /etc/mdadm/mdadm.conf
+     7254      4 -rw-r--r--   1 root     root          312 Jul 14 06:10 /etc/ufw/ufw.conf
+    38199      4 -rw-r--r--   1 root     root         1391 Aug 15  2017 /etc/ufw/sysctl.conf
+      736      4 -rw-r--r--   1 root     root         2762 Aug 28 21:02 /etc/sysctl.conf
+      280      4 -rw-r--r--   1 root     root           92 Apr  9  2018 /etc/host.conf
+   520577      4 -rw-r--r--   1 root     root          573 Jan 18  2018 /etc/fail2ban/paths-debian.conf
+   520477      4 -rw-r--r--   1 root     root         1033 Jan 18  2018 /etc/fail2ban/action.d/sendmail-whois-ipmatches.conf
+   520448      4 -rw-r--r--   1 root     root         2000 Jan 18  2018 /etc/fail2ban/action.d/iptables-ipset-proto4.conf
+   520437      4 -rw-r--r--   1 root     root         2235 Jan 18  2018 /etc/fail2ban/action.d/firewallcmd-ipset.conf
+   520467      4 -rw-r--r--   1 root     root         1436 Jan 18  2018 /etc/fail2ban/action.d/npf.conf
+   520436      4 -rw-r--r--   1 root     root         2649 Jan 18  2018 /etc/fail2ban/action.d/firewallcmd-common.conf
+   520479      4 -rw-r--r--   1 root     root          997 Jan 18  2018 /etc/fail2ban/action.d/sendmail-whois-matches.conf
+   520452      4 -rw-r--r--   1 root     root         1420 Jan 18  2018 /etc/fail2ban/action.d/iptables-multiport.conf
+   520440      4 -rw-r--r--   1 root     root         2314 Jan 18  2018 /etc/fail2ban/action.d/firewallcmd-rich-logging.conf
+   520441      4 -rw-r--r--   1 root     root         1765 Jan 18  2018 /etc/fail2ban/action.d/firewallcmd-rich-rules.conf
+   520486      4 -rw-r--r--   1 root     root         1045 Jan 18  2018 /etc/fail2ban/action.d/ufw.conf
+   520468      4 -rw-r--r--   1 root     root         3146 Jan 18  2018 /etc/fail2ban/action.d/nsupdate.conf
+   520470      4 -rw-r--r--   1 root     root         2214 Jan 18  2018 /etc/fail2ban/action.d/osx-ipfw.conf
+   520454      4 -rw-r--r--   1 root     root         2584 Jan 18  2018 /etc/fail2ban/action.d/iptables-xt_recent-echo.conf
+   520425      4 -rw-r--r--   1 root     root         3879 Jan 18  2018 /etc/fail2ban/action.d/abuseipdb.conf
+   520426      4 -rw-r--r--   1 root     root          587 Jan 18  2018 /etc/fail2ban/action.d/apf.conf
+   520466      4 -rw-r--r--   1 root     root         3697 Jan 18  2018 /etc/fail2ban/action.d/nginx-block-map.conf
+   520472      4 -rw-r--r--   1 root     root         1023 Jan 18  2018 /etc/fail2ban/action.d/route.conf
+   520483      4 -rw-r--r--   1 root     root         2068 Jan 18  2018 /etc/fail2ban/action.d/shorewall.conf
+   520432      8 -rw-r--r--   1 root     root         4669 Jan 18  2018 /etc/fail2ban/action.d/complain.conf
+   520459      4 -rw-r--r--   1 root     root         1754 Jan 18  2018 /etc/fail2ban/action.d/mail-whois.conf
+   520463      4 -rw-r--r--   1 root     root          490 Jan 18  2018 /etc/fail2ban/action.d/nftables-allports.conf
+   520465      4 -rw-r--r--   1 root     root          496 Jan 18  2018 /etc/fail2ban/action.d/nftables-multiport.conf
+   520431      4 -rw-r--r--   1 root     root         2719 Jan 18  2018 /etc/fail2ban/action.d/cloudflare.conf
+   520461      8 -rw-r--r--   1 root     root         5233 Jan 18  2018 /etc/fail2ban/action.d/mynetwatchman.conf
+   520438      4 -rw-r--r--   1 root     root         1270 Jan 18  2018 /etc/fail2ban/action.d/firewallcmd-multiport.conf
+   520439      4 -rw-r--r--   1 root     root         1898 Jan 18  2018 /etc/fail2ban/action.d/firewallcmd-new.conf
+   520478      4 -rw-r--r--   1 root     root         1300 Jan 18  2018 /etc/fail2ban/action.d/sendmail-whois-lines.conf
+   520427      4 -rw-r--r--   1 root     root          629 Jan 18  2018 /etc/fail2ban/action.d/badips.conf
+   520458      4 -rw-r--r--   1 root     root         2355 Jan 18  2018 /etc/fail2ban/action.d/mail-whois-lines.conf
+   520456      4 -rw-r--r--   1 root     root         2343 Jan 18  2018 /etc/fail2ban/action.d/mail-buffered.conf
+   520482      4 -rw-r--r--   1 root     root         2981 Jan 18  2018 /etc/fail2ban/action.d/shorewall-ipset-proto6.conf
+   520444      4 -rw-r--r--   1 root     root         1485 Jan 18  2018 /etc/fail2ban/action.d/ipfilter.conf
+   520453      4 -rw-r--r--   1 root     root         1497 Jan 18  2018 /etc/fail2ban/action.d/iptables-new.conf
+   520480      4 -rw-r--r--   1 root     root          977 Jan 18  2018 /etc/fail2ban/action.d/sendmail-whois.conf
+   520464      4 -rw-r--r--   1 root     root         4038 Jan 18  2018 /etc/fail2ban/action.d/nftables-common.conf
+   520469      4 -rw-r--r--   1 root     root          469 Jan 18  2018 /etc/fail2ban/action.d/osx-afctl.conf
+   520430      4 -rw-r--r--   1 root     root         3094 Jan 18  2018 /etc/fail2ban/action.d/bsd-ipfw.conf
+   520471      4 -rw-r--r--   1 root     root         3662 Jan 18  2018 /etc/fail2ban/action.d/pf.conf
+   520460      4 -rw-r--r--   1 root     root         1621 Jan 18  2018 /etc/fail2ban/action.d/mail.conf
+   520455      4 -rw-r--r--   1 root     root         1339 Jan 18  2018 /etc/fail2ban/action.d/iptables.conf
+   520450      4 -rw-r--r--   1 root     root         2240 Jan 18  2018 /etc/fail2ban/action.d/iptables-ipset-proto6.conf
+   520435      4 -rw-r--r--   1 root     root         1501 Jan 18  2018 /etc/fail2ban/action.d/firewallcmd-allports.conf
+   520434      4 -rw-r--r--   1 root     root         1629 Jan 18  2018 /etc/fail2ban/action.d/dummy.conf
+   520485      4 -rw-r--r--   1 root     root         1330 Jan 18  2018 /etc/fail2ban/action.d/symbiosis-blacklist-allports.conf
+   520442      4 -rw-r--r--   1 root     root          589 Jan 18  2018 /etc/fail2ban/action.d/helpers-common.conf
+   520446      4 -rw-r--r--   1 root     root         1426 Jan 18  2018 /etc/fail2ban/action.d/iptables-allports.conf
+   520429      4 -rw-r--r--   1 root     root         2631 Jan 18  2018 /etc/fail2ban/action.d/blocklist_de.conf
+   520433      8 -rw-r--r--   1 root     root         7580 Jan 18  2018 /etc/fail2ban/action.d/dshield.conf
+   520487      8 -rw-r--r--   1 root     root         6082 Jan 18  2018 /etc/fail2ban/action.d/xarf-login-attack.conf
+   520449      4 -rw-r--r--   1 root     root         2197 Jan 18  2018 /etc/fail2ban/action.d/iptables-ipset-proto6-allports.conf
+   520474      4 -rw-r--r--   1 root     root         1824 Jan 18  2018 /etc/fail2ban/action.d/sendmail-common.conf
+   520473      4 -rw-r--r--   1 root     root         2830 Jan 18  2018 /etc/fail2ban/action.d/sendmail-buffered.conf
+   520476      4 -rw-r--r--   1 root     root         1052 Jan 18  2018 /etc/fail2ban/action.d/sendmail-whois-ipjailmatches.conf
+   520475      4 -rw-r--r--   1 root     root         1773 Jan 18  2018 /etc/fail2ban/action.d/sendmail-geoip-lines.conf
+   520451      4 -rw-r--r--   1 root     root         2082 Jan 18  2018 /etc/fail2ban/action.d/iptables-multiport-log.conf
+   520443      4 -rw-r--r--   1 root     root         1402 Jan 18  2018 /etc/fail2ban/action.d/hostsdeny.conf
+   520445      4 -rw-r--r--   1 root     root         1417 Jan 18  2018 /etc/fail2ban/action.d/ipfw.conf
+   520481      4 -rw-r--r--   1 root     root          857 Jan 18  2018 /etc/fail2ban/action.d/sendmail.conf
+   520462      4 -rw-r--r--   1 root     root         1493 Jan 18  2018 /etc/fail2ban/action.d/netscaler.conf
+   520457      4 -rw-r--r--   1 root     root         1049 Jan 18  2018 /etc/fail2ban/action.d/mail-whois-common.conf
+   520447      4 -rw-r--r--   1 root     root         2738 Jan 18  2018 /etc/fail2ban/action.d/iptables-common.conf
+   520576      4 -rw-r--r--   1 root     root         2827 Jan 18  2018 /etc/fail2ban/paths-common.conf
+   640004      4 -rw-r--r--   1 root     root           22 Apr  4  2018 /etc/fail2ban/jail.d/defaults-debian.conf
+   521342      4 -rw-r--r--   1 root     root         2319 Aug 28 21:02 /etc/fail2ban/fail2ban.conf
+   520575      4 -rw-r--r--   1 root     root          645 Jan 18  2018 /etc/fail2ban/paths-arch.conf
+   520613     24 -rw-r--r--   1 root     root        22897 Aug 28 21:02 /etc/fail2ban/jail.conf
+   520502      4 -rw-r--r--   1 root     root         1020 Jan 18  2018 /etc/fail2ban/filter.d/apache-shellshock.conf
+   520540      4 -rw-r--r--   1 root     root          495 Jan 18  2018 /etc/fail2ban/filter.d/openwebmail.conf
+   520523      4 -rw-r--r--   1 root     root          322 Jan 18  2018 /etc/fail2ban/filter.d/gssftpd.conf
+   520534      4 -rw-r--r--   1 root     root         1509 Jan 18  2018 /etc/fail2ban/filter.d/named-refused.conf
+   520563      4 -rw-r--r--   1 root     root          191 Jan 18  2018 /etc/fail2ban/filter.d/squirrelmail.conf
+   520552      4 -rw-r--r--   1 root     root         1499 Jan 18  2018 /etc/fail2ban/filter.d/roundcube-auth.conf
+   520616      4 -rw-r--r--   1 root     root          941 Aug 28 21:02 /etc/fail2ban/filter.d/postfix.iredmail.conf
+   520491      4 -rw-r--r--   1 root     root          467 Jan 18  2018 /etc/fail2ban/filter.d/3proxy.conf
+   520495      4 -rw-r--r--   1 root     root         1577 Jan 18  2018 /etc/fail2ban/filter.d/apache-common.conf
+   520571      4 -rw-r--r--   1 root     root          520 Jan 18  2018 /etc/fail2ban/filter.d/wuftpd.conf
+   520492      4 -rw-r--r--   1 root     root         2642 Jan 18  2018 /etc/fail2ban/filter.d/apache-auth.conf
+   520515      4 -rw-r--r--   1 root     root          557 Jan 18  2018 /etc/fail2ban/filter.d/drupal-auth.conf
+   520548      4 -rw-r--r--   1 root     root         1169 Jan 18  2018 /etc/fail2ban/filter.d/proftpd.conf
+   520573      4 -rw-r--r--   1 root     root          524 Jan 18  2018 /etc/fail2ban/filter.d/zoneminder.conf
+   520520      4 -rw-r--r--   1 root     root         1309 Jan 18  2018 /etc/fail2ban/filter.d/freeswitch.conf
+   520524      4 -rw-r--r--   1 root     root          603 Jan 18  2018 /etc/fail2ban/filter.d/guacamole.conf
+   520615      4 -rw-r--r--   1 root     root          805 Aug 28 21:02 /etc/fail2ban/filter.d/postfix-pregreet.iredmail.conf
+   520555      4 -rw-r--r--   1 root     root          570 Jan 18  2018 /etc/fail2ban/filter.d/selinux-ssh.conf
+   520499      4 -rw-r--r--   1 root     root         1187 Jan 18  2018 /etc/fail2ban/filter.d/apache-noscript.conf
+   520567      4 -rw-r--r--   1 root     root          890 Jan 18  2018 /etc/fail2ban/filter.d/tine20.conf
+   520516      4 -rw-r--r--   1 root     root         1572 Jan 18  2018 /etc/fail2ban/filter.d/ejabberd-auth.conf
+   520500      4 -rw-r--r--   1 root     root         2184 Jan 18  2018 /etc/fail2ban/filter.d/apache-overflows.conf
+   520518      4 -rw-r--r--   1 root     root         2158 Jan 18  2018 /etc/fail2ban/filter.d/exim-spam.conf
+   520513      4 -rw-r--r--   1 root     root         2195 Jan 18  2018 /etc/fail2ban/filter.d/dovecot.conf
+   520569      4 -rw-r--r--   1 root     root          637 Jan 18  2018 /etc/fail2ban/filter.d/vsftpd.conf
+   520532      4 -rw-r--r--   1 root     root          890 Jan 18  2018 /etc/fail2ban/filter.d/mysqld-auth.conf
+   520557      4 -rw-r--r--   1 root     root         2877 Jan 18  2018 /etc/fail2ban/filter.d/sendmail-reject.conf
+   520572      4 -rw-r--r--   1 root     root          521 Jan 18  2018 /etc/fail2ban/filter.d/xinetd-fail.conf
+   520514      4 -rw-r--r--   1 root     root         1730 Jan 18  2018 /etc/fail2ban/filter.d/dropbear.conf
+   520508      4 -rw-r--r--   1 root     root          429 Jan 18  2018 /etc/fail2ban/filter.d/courier-auth.conf
+   520568      4 -rw-r--r--   1 root     root          374 Jan 18  2018 /etc/fail2ban/filter.d/uwimap-auth.conf
+   520537      4 -rw-r--r--   1 root     root         1454 Jan 18  2018 /etc/fail2ban/filter.d/nginx-limit-req.conf
+   520527      4 -rw-r--r--   1 root     root          938 Jan 18  2018 /etc/fail2ban/filter.d/kerio.conf
+   520503      4 -rw-r--r--   1 root     root         3492 Jan 18  2018 /etc/fail2ban/filter.d/assp.conf
+   520539      4 -rw-r--r--   1 root     root          452 Jan 18  2018 /etc/fail2ban/filter.d/openhab.conf
+   520507      4 -rw-r--r--   1 root     root          244 Jan 18  2018 /etc/fail2ban/filter.d/counter-strike.conf
+   520497      4 -rw-r--r--   1 root     root          488 Jan 18  2018 /etc/fail2ban/filter.d/apache-modsecurity.conf
+   520556      4 -rw-r--r--   1 root     root          388 Jan 18  2018 /etc/fail2ban/filter.d/sendmail-auth.conf
+   520525      4 -rw-r--r--   1 root     root         1170 Jan 18  2018 /etc/fail2ban/filter.d/haproxy-http-auth.conf
+   520511      4 -rw-r--r--   1 root     root          338 Jan 18  2018 /etc/fail2ban/filter.d/directadmin.conf
+   520546      4 -rw-r--r--   1 root     root          242 Jan 18  2018 /etc/fail2ban/filter.d/portsentry.conf
+   520551      4 -rw-r--r--   1 root     root         1286 Jan 18  2018 /etc/fail2ban/filter.d/recidive.conf
+   520501      4 -rw-r--r--   1 root     root          362 Jan 18  2018 /etc/fail2ban/filter.d/apache-pass.conf
+   520519      4 -rw-r--r--   1 root     root         2819 Jan 18  2018 /etc/fail2ban/filter.d/exim.conf
+   520528      4 -rw-r--r--   1 root     root          333 Jan 18  2018 /etc/fail2ban/filter.d/lighttpd-auth.conf
+   520542      4 -rw-r--r--   1 root     root         1044 Jan 18  2018 /etc/fail2ban/filter.d/pam-generic.conf
+   520570      4 -rw-r--r--   1 root     root          444 Jan 18  2018 /etc/fail2ban/filter.d/webmin-auth.conf
+   520521      4 -rw-r--r--   1 root     root         1210 Jan 18  2018 /etc/fail2ban/filter.d/froxlor-auth.conf
+   520553      4 -rw-r--r--   1 root     root          821 Jan 18  2018 /etc/fail2ban/filter.d/screensharingd.conf
+   520566      4 -rw-r--r--   1 root     root          649 Jan 18  2018 /etc/fail2ban/filter.d/suhosin.conf
+   520545      4 -rw-r--r--   1 root     root          278 Jan 18  2018 /etc/fail2ban/filter.d/phpmyadmin-syslog.conf
+   520533      4 -rw-r--r--   1 root     root          400 Jan 18  2018 /etc/fail2ban/filter.d/nagios.conf
+   520496      4 -rw-r--r--   1 root     root          324 Jan 18  2018 /etc/fail2ban/filter.d/apache-fakegooglebot.conf
+   520504      4 -rw-r--r--   1 root     root         2091 Jan 18  2018 /etc/fail2ban/filter.d/asterisk.conf
+   520549      4 -rw-r--r--   1 root     root         2409 Jan 18  2018 /etc/fail2ban/filter.d/pure-ftpd.conf
+   520543      4 -rw-r--r--   1 root     root          568 Jan 18  2018 /etc/fail2ban/filter.d/perdition.conf
+   520541      4 -rw-r--r--   1 root     root         1937 Jan 18  2018 /etc/fail2ban/filter.d/oracleims.conf
+   520560      4 -rw-r--r--   1 root     root          708 Jan 18  2018 /etc/fail2ban/filter.d/sogo-auth.conf
+   520505      4 -rw-r--r--   1 root     root          522 Jan 18  2018 /etc/fail2ban/filter.d/botsearch-common.conf
+   520538      4 -rw-r--r--   1 root     root          760 Jan 18  2018 /etc/fail2ban/filter.d/nsd.conf
+   520562      4 -rw-r--r--   1 root     root          260 Jan 18  2018 /etc/fail2ban/filter.d/squid.conf
+   520512      4 -rw-r--r--   1 root     root         1942 Jan 18  2018 /etc/fail2ban/filter.d/domino-smtp.conf
+   520517      4 -rw-r--r--   1 root     root          516 Jan 18  2018 /etc/fail2ban/filter.d/exim-common.conf
+   520547      4 -rw-r--r--   1 root     root         2694 Jan 18  2018 /etc/fail2ban/filter.d/postfix.conf
+   520561      4 -rw-r--r--   1 root     root         1094 Jan 18  2018 /etc/fail2ban/filter.d/solid-pop3d.conf
+   520574      4 -rw-r--r--   1 root     root          217 Aug 28 21:02 /etc/fail2ban/filter.d/dovecot.iredmail.conf
+   520535      4 -rw-r--r--   1 root     root          681 Jan 18  2018 /etc/fail2ban/filter.d/nginx-botsearch.conf
+   520530      4 -rw-r--r--   1 root     root          767 Jan 18  2018 /etc/fail2ban/filter.d/monit.conf
+   520550      4 -rw-r--r--   1 root     root          795 Jan 18  2018 /etc/fail2ban/filter.d/qmail.conf
+   520544      4 -rw-r--r--   1 root     root          891 Jan 18  2018 /etc/fail2ban/filter.d/php-url-fopen.conf
+   520494      4 -rw-r--r--   1 root     root         1265 Jan 18  2018 /etc/fail2ban/filter.d/apache-botsearch.conf
+   520617      4 -rw-r--r--   1 root     root          254 Aug 28 21:02 /etc/fail2ban/filter.d/roundcube.iredmail.conf
+   520565      4 -rw-r--r--   1 root     root          363 Jan 18  2018 /etc/fail2ban/filter.d/stunnel.conf
+   520529      4 -rw-r--r--   1 root     root         2279 Jan 18  2018 /etc/fail2ban/filter.d/mongodb-auth.conf
+   520558      4 -rw-r--r--   1 root     root          371 Jan 18  2018 /etc/fail2ban/filter.d/sieve.conf
+   520536      4 -rw-r--r--   1 root     root          485 Jan 18  2018 /etc/fail2ban/filter.d/nginx-http-auth.conf
+   520493      4 -rw-r--r--   1 root     root         2831 Jan 18  2018 /etc/fail2ban/filter.d/apache-badbots.conf
+   520554      4 -rw-r--r--   1 root     root          538 Jan 18  2018 /etc/fail2ban/filter.d/selinux-common.conf
+   520526      4 -rw-r--r--   1 root     root          404 Jan 18  2018 /etc/fail2ban/filter.d/horde.conf
+   520522      4 -rw-r--r--   1 root     root          236 Jan 18  2018 /etc/fail2ban/filter.d/groupoffice.conf
+   520509      4 -rw-r--r--   1 root     root          498 Jan 18  2018 /etc/fail2ban/filter.d/courier-smtp.conf
+   520498      4 -rw-r--r--   1 root     root          596 Jan 18  2018 /etc/fail2ban/filter.d/apache-nohome.conf
+   520510      4 -rw-r--r--   1 root     root          444 Jan 18  2018 /etc/fail2ban/filter.d/cyrus-imap.conf
+   520506      4 -rw-r--r--   1 root     root         1957 Jan 18  2018 /etc/fail2ban/filter.d/common.conf
+   520564      8 -rw-r--r--   1 root     root         5318 Jan 18  2018 /etc/fail2ban/filter.d/sshd.conf
+   520559      4 -rw-r--r--   1 root     root          706 Jan 18  2018 /etc/fail2ban/filter.d/slapd.conf
+   520531      4 -rw-r--r--   1 root     root          686 Jan 18  2018 /etc/fail2ban/filter.d/murmur.conf
+   520578      4 -rw-r--r--   1 root     root          738 Jan 18  2018 /etc/fail2ban/paths-opensuse.conf
+      258      4 -rw-r--r--   1 root     root          604 Aug 13  2017 /etc/deluser.conf
+      153      4 -rw-r--r--   1 root     root         3028 Feb 10  2019 /etc/adduser.conf
+    42654      4 -rw-r--r--   1 root     root           29 Jul 14 06:07 /etc/tmpfiles.d/screen-cleanup.conf
+      441      4 -rw-r--r--   1 root     root         2041 Mar  1  2018 /etc/selinux/semanage.conf
+    37194      4 -rw-r--r--   1 root     root         1475 Sep 27  2018 /etc/apparmor/parser.conf
+    37195      4 -rw-r--r--   1 root     root         1962 Sep 27  2018 /etc/apparmor/subdomain.conf
+   258647     20 -rw-r--r--   1 root     root        18859 Aug 28 21:02 /etc/php/7.2/fpm/pool.d/www.conf
+   258653      8 -rw-r--r--   1 root     root         4405 Aug 28 21:02 /etc/php/7.2/fpm/php-fpm.conf
+      245      4 -rw-r--r--   1 root     root         2969 Feb 28  2018 /etc/debconf.conf
+    39012      4 -rw-r--r--   1 root     root          403 Mar  1  2018 /etc/updatedb.conf
+    39348      4 -rw-r--r--   1 root     root         1216 Apr 20  2018 /etc/apport/crashdb.conf
+      185      8 -rw-r--r--   1 root     root         5898 Feb 10  2019 /etc/ca-certificates.conf
+      428      8 -rw-r--r--   1 root     root         4620 Apr  5  2018 /etc/security/access.conf
+      430      4 -rw-r--r--   1 root     root         3635 Apr  5  2018 /etc/security/group.conf
+      437      4 -rw-r--r--   1 root     root         2972 Apr  5  2018 /etc/security/pam_env.conf
+      433      4 -rw-r--r--   1 root     root         1440 Apr  5  2018 /etc/security/namespace.conf
+      439      4 -rw-r--r--   1 root     root         2179 Apr  5  2018 /etc/security/time.conf
+      429      4 -rw-r--r--   1 root     root         1793 Jan  6  2014 /etc/security/capability.conf
+      438      4 -rw-r--r--   1 root     root          419 Apr  5  2018 /etc/security/sepermit.conf
+      431      4 -rw-r--r--   1 root     root         2150 Apr  5  2018 /etc/security/limits.conf
+      360      4 -rw-r--r--   1 root     root          812 Mar 24  2018 /etc/mke2fs.conf
+      384      4 -rw-r--r--   1 root     root          552 Apr  4  2018 /etc/pam.conf
+      382      4 -rw-r--r--   1 root     root          513 Feb 10  2019 /etc/nsswitch.conf
+      625      4 -rw-r--r--   1 root     root          153 Apr 20  2018 /etc/udev/udev.conf
+   385913      4 -rw-r--r--   1 root     root          564 Aug  4 10:05 /etc/letsencrypt/renewal/wintherlanden.com.conf
+   385928      4 -rw-r--r--   1 root     root          612 Aug  4 14:52 /etc/letsencrypt/renewal/lucia-wintherlanden.com.conf
+   400880      4 -rw-r--r--   1 root     root          577 Sep  9 13:44 /etc/letsencrypt/renewal/josefschmidt.com.conf
+   385903      4 -rw-r--r--   1 root     root         1143 Aug  4 10:05 /etc/letsencrypt/options-ssl-nginx.conf
+   152856      4 -rw-r--r--   1 root     root          455 Jan 15  2019 /etc/polkit-1/nullbackend.conf.d/50-nullbackend.conf
+   152853      4 -rw-r--r--   1 root     root          267 Jan 15  2019 /etc/polkit-1/localauthority.conf.d/50-localauthority.conf
+   152854      4 -rw-r--r--   1 root     root           65 Jan 15  2019 /etc/polkit-1/localauthority.conf.d/51-ubuntu-admin.conf
