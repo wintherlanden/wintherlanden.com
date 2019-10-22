@@ -162,6 +162,9 @@
         #cookie-bar-button {
             background-color: white !important;
         }
+        #cookie-bar-button a {
+            color: rgba(129, 139, 160, 1.0) !important;
+        }
 
 
         .footer {
