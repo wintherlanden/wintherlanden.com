@@ -32,9 +32,6 @@ if (!$nolayout) {
     <script src="/ekko-lightbox.js?version=2"
             crossorigin="anonymous"></script>
 
-    <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?theme=flying&thirdparty=1&always=1&refreshPage=1&hideDetailsBtn=1&showPolicyLink=1&remember=40&privacyPage=https%3A%2F%2Fwww.wintherlanden.com%2F%3Fdatenschutz"></script>
-
     <script>
 
         $(document).on('click', '[data-toggle="lightbox"]', function (event) {

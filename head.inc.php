@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
           integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous"/>
 
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?theme=flying&thirdparty=1&always=1&refreshPage=1&hideDetailsBtn=1&showPolicyLink=1&remember=40&privacyPage=https%3A%2F%2Fwww.wintherlanden.com%2F%3Fdatenschutz"></script>
+
+
     <style>
         html {
             position: relative;
