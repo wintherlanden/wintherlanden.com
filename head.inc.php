@@ -163,7 +163,7 @@
         #cookie-bar-main-privacy-link {
             color: rgba(255, 255, 255, 1) !important;
         }
-        #cookie-bar-button {
+        a#cookie-bar-button {
             background-color: white !important;
             color: rgba(129, 139, 160, 1.0) !important;
         }
