@@ -42,6 +42,11 @@ $categories = [
     .small_padding img {
         padding: 9px;
     }
+
+    .gallery_scroll {
+        overflow-x: auto;
+	position: relative;
+    }
 </style>
 
 <div class="gallery">
@@ -60,6 +65,7 @@ $categories = [
                     $image_front = $image;
                 }
             } else {
+                $images_gallery[] = $image;
                 $images_gallery[] = $image;
             }
         }
