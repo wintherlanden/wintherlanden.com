@@ -201,6 +201,10 @@
 
         @media screen and (max-width: 500px) {
 
+            .datenschutz h1, .datenschutz h2, .datenschutz h3, .datenschutz h4, .datenschutz h5 {
+                font-size: 16px;
+            }
+
             body {
                 font-size: 0.75rem;
             }
