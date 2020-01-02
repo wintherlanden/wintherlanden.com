@@ -222,6 +222,10 @@
                 right: 0px;
             }
 
+            #cookie-bar-main-privacy-link {
+                padding: 0 !important;
+            }
+
             .navbar {
                 padding: .2rem 0.5rem;
             }
