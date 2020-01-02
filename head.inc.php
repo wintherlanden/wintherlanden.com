@@ -60,7 +60,7 @@
         }
 
         #navbarNavWrapper {
-            width: 750px;
+            width: 590px;
             margin: 0 auto;
         }
 
