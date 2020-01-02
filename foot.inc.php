@@ -60,10 +60,12 @@ if (!$nolayout) {
 
 
     $('.pfeil').click(function () {
-        $(this).parent().find('.gallery_scroll').animate({ scrollLeft: '+=200'  }, 500);
+	var $scrollview = $(this).parent().find('.gallery_scroll');
+        $scrollview.animate({ scrollLeft: '+=200'  }, 500);
     });
     $('.pfeil2').click(function () {
-        $(this).parent().find('.gallery_scroll').animate({ scrollLeft: '-=200'  }, 500);
+	var $scrollview = $(this).parent().find('.gallery_scroll');
+        $scrollview.animate({ scrollLeft: '-=200'  }, 500);
     });
 
 
