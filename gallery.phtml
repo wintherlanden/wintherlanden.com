@@ -135,7 +135,8 @@ $categories = [
 		<nobr>
                 <?php
                 foreach ($images_gallery as $image) {
-		    $text_file = "gallery/" . $name . "/" . $image . ".txt";
+		    if (is_file("gallery/" . $name . "/" . $image . '.txt")) rename("gallery/" . $name . "/" . $image . '.txt", "gallery/" . $name . "/" . $image . '.' . $lang . ".txt");
+		    $text_file = "gallery/" . $name . "/" . $image . '.' . $lang . ".txt";
 		    if (!is_file($text_file)) file_put_contents($text_file, "");
 		    $text = file_get_contents($text_file);
                     ?>
