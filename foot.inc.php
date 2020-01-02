@@ -68,7 +68,8 @@ if (!$nolayout) {
         $scrollview.animate({ scrollLeft: '-=' + ($scrollview.width() / 4)  }, 500);
     });
     $('.gallery_scroll').scroll(function (e) {
-        
+        var $scrollview = $(this);
+        console.log($scrollview.scrollLeft());
     });
 
 
