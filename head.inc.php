@@ -243,6 +243,10 @@
                 height: 20px;
             }
 
+            #image_biography {
+                width: 57%;
+            }
+
             .footer {
                 height: 26px;
                 line-height: 26px;
