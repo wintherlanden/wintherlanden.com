@@ -85,6 +85,7 @@ if (!$nolayout) {
  	    $pfeil2.show();
         }
     });
+    $('.pfeil2').hide();
 
 
     </script>
