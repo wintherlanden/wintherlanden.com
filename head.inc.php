@@ -305,11 +305,11 @@ if (!$nolayout) {
                 <li class="nav-item <?= ($page == "home" ? "active" : ""); ?>">
                     <a class="nav-link" href="?home">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item <?= ($page == "gallery" ? "active" : ""); ?>">
-                    <a class="nav-link" href="?gallery">Gallery</a>
-                </li>
                 <li class="nav-item <?= ($page == "biography" ? "active" : ""); ?>">
                     <a class="nav-link" href="?biography">Biography</a>
+                </li>
+                <li class="nav-item <?= ($page == "gallery" ? "active" : ""); ?>">
+                    <a class="nav-link" href="?gallery">Gallery</a>
                 </li>
                 <li class="nav-item <?= ($page == "exhibitions" ? "active" : ""); ?>">
                     <a class="nav-link" href="?exhibitions">Exhibitions</a>
