@@ -75,14 +75,14 @@ if (!$nolayout) {
         var max = $scrollview.find('nobr').width() - $scrollview.width() - 2;
 	var current = $scrollview.scrollLeft();
 	if (current >= max) {
- 	    $pfeil.hide();
+ 	    $pfeil.hide({ duration: 200, });
 	} else {
- 	    $pfeil.show();
+ 	    $pfeil.show({ duration: 200, });
         }
 	if (current <= min) {
- 	    $pfeil2.hide();
+ 	    $pfeil2.hide({ duration: 200, });
 	} else {
- 	    $pfeil2.show();
+ 	    $pfeil2.show({ duration: 200, });
         }
     });
     $('.pfeil2').hide();
