@@ -30,6 +30,8 @@ $categories = [
 
     .gallery .row {
         margin-bottom: 18px;
+        background: url(images/verlauf.png);
+        background-size: 100%;
     }
 
     .nopad {
@@ -39,6 +41,17 @@ $categories = [
 
     .small_padding img {
         padding: 9px;
+    }
+
+    .gallery_scroll {
+        overflow-x: auto;
+	position: relative;
+    }
+
+    .pfeil {
+        position: absolute;
+	right: 0px;
+	top: calc(50% - 22px);
     }
 </style>
 
@@ -59,6 +72,7 @@ $categories = [
                 }
             } else {
                 $images_gallery[] = $image;
+                $images_gallery[] = $image;
             }
         }
         ?>
@@ -71,6 +85,8 @@ $categories = [
                 </a>
             </div>
             <div class="col-sm-10 nopad">
+		<div class="gallery_scroll">
+		<nobr>
                 <?php
                 foreach ($images_gallery as $image) {
                     ?>
@@ -81,6 +97,11 @@ $categories = [
                     <?php
                 }
                 ?>
+		</nobr>
+		</div>
+		<div class="pfeil">
+			<img src="images/pfeil.png">
+		</div>
             </div>
 
         </div>
