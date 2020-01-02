@@ -135,7 +135,7 @@ $categories = [
                 foreach ($images_gallery as $image) {
 		    $text_file = "gallery/" . $image;
 		    if (!is_file($text_file)) file_put_contents($text_file, "");
-		    $text = file_get_contents($file_text);
+		    $text = file_get_contents($text_file);
                     ?>
                     <a href="gallery/<?= $name; ?>/<?= $image; ?>" data-toggle="lightbox" data-gallery="example-gallery"
 			   data-footer="<?=$text;?>"
