@@ -135,9 +135,7 @@ $categories = [
                 foreach ($images_gallery as $image) {
                     ?>
                     <a href="gallery/<?= $name; ?>/<?= $image; ?>" data-toggle="lightbox" data-gallery="example-gallery"
-                       class="nopad small_padding">
-                        <img src="thumb.php?src=gallery/<?= $name; ?>/<?= $image; ?>" class="img-fluid fixed_height">
-                    </a>
+                       class="nopad small_padding"><img src="thumb.php?src=gallery/<?= $name; ?>/<?= $image; ?>" class="img-fluid fixed_height"></a>
                     <?php
                 }
                 ?>
