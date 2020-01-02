@@ -60,7 +60,7 @@ if (!$nolayout) {
 
 
     $('.pfeil').click(function () {
-console.log(this);
+console.log($(this).parent().find('.gallery_scroll').get(0));
         $(this).closest('.gallery_scroll').animate({ scrollLeft: '+=200'  }, 5000);
     });
 
