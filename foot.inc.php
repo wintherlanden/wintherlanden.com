@@ -69,9 +69,21 @@ if (!$nolayout) {
     });
     $('.gallery_scroll').scroll(function (e) {
         var $scrollview = $(this);
+        var $pfeil = $scrollview.parent().find('.pfeil');
+        var $pfeil2 = $scrollview.parent().find('.pfeil2');
         var min = 0;
         var max = $scrollview.find('nobr').width() - $scrollview.width() - 2;
-        console.log($scrollview.scrollLeft());
+	var current = $scrollview.scrollLeft();
+	if (current >= max) {
+ 	    $pfeil.hide();
+	} else {
+ 	    $pfeil.show();
+        }
+	if (current <= min) {
+ 	    $pfeil2.hide();
+	} else {
+ 	    $pfeil2.show();
+        }
     });
 
 
