@@ -132,7 +132,7 @@ $categories = [
 		<div class="gallery_scroll">
 		<nobr>
                 <?php
-                foreach ($images_gallery as $image) {
+                foreach ($images_gallery as $image) {echo $image;
 		    if (!is_file($image . ".txt")) file_put_contents($image . ".txt", "");
 		    $text = file_get_contents($image . ".txt");
                     ?>
