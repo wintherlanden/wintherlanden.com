@@ -245,6 +245,7 @@
 
             #image_biography {
                 width: 57%;
+                margin-bottom: 35px;
             }
 
             .footer {
