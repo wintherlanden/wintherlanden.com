@@ -309,10 +309,10 @@ if (!$nolayout) {
                     <a class="nav-link" href="?biography"><?=($lang == "de" ? "Biografie" : "Biography");?></a>
                 </li>
                 <li class="nav-item <?= ($page == "gallery" ? "active" : ""); ?>">
-                    <a class="nav-link" href="?gallery">Gallery</a>
+                    <a class="nav-link" href="?gallery"><?=($lang == "de" ? "Galerie" : "Gallery");?></a>
                 </li>
                 <li class="nav-item <?= ($page == "exhibitions" ? "active" : ""); ?>">
-                    <a class="nav-link" href="?exhibitions">Exhibitions</a>
+                    <a class="nav-link" href="?exhibitions"><?=($lang == "de" ? "Ausstellungen" : "Exhibitions");?></a>
                 </li>
 <!--
                 <li class="nav-item <?= ($page == "instagram" ? "active" : ""); ?>">
@@ -320,7 +320,7 @@ if (!$nolayout) {
                 </li>
 -->
                 <li class="nav-item <?= ($page == "contact" ? "active" : ""); ?>">
-                    <a class="nav-link" href="?contact">Contact</a>
+                    <a class="nav-link" href="?contact"><?=($lang == "de" ? "Kontakt" : "Contact");?></a>
                 </li>
             </ul>
         </div>
