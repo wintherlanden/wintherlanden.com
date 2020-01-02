@@ -61,11 +61,11 @@ if (!$nolayout) {
 
     $('.pfeil').click(function () {
 	var $scrollview = $(this).parent().find('.gallery_scroll');
-        $scrollview.animate({ scrollLeft: '+=' + ($scrollview.width() / 4)  }, 500);
+        $scrollview.animate({ scrollLeft: '+=' + ($scrollview.find("a").width())  }, 500);
     });
     $('.pfeil2').click(function () {
 	var $scrollview = $(this).parent().find('.gallery_scroll');
-        $scrollview.animate({ scrollLeft: '-=' + ($scrollview.width() / 4)  }, 500);
+        $scrollview.animate({ scrollLeft: '-=' + ($scrollview.find("a").width())  }, 500);
     });
     $('.gallery_scroll').scroll(function (e) {
         var $scrollview = $(this);
