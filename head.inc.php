@@ -25,7 +25,7 @@
         }
 
         body {
-            background: #ccc url("images/Hintergrund.jpg");
+            background: url("images/Hintergrund2.jpg");
             background-size: 100%;
             overscroll-behavior: none;
             margin-bottom: 38px; /* Margin bottom by footer height */
