@@ -110,6 +110,8 @@ $categories = [
         foreach ($images as $image) {
             if ($image[0] == '.')
                 continue;
+	    if (strpos($image, ".txt") !== false)
+		continue;
 
             if (strpos($image, "Front") !== false) {
                 if (strpos($image, 'Front.' . $lang . '.png') !== false) {
