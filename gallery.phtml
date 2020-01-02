@@ -35,7 +35,7 @@ $categories = [
     }
     @media (max-width: 768px) {
         .gallery img.fixed_height {
-            width: calc(50% - 4px);
+            width: calc(33% - 4px);
         }
     }
 
@@ -122,13 +122,13 @@ $categories = [
         ?>
         <div class="row">
 
-            <div class="col-lg-2 col-md-3 col-sm-4 nopad">
+            <div class="col-lg-2 col-md-3 col-sm-3 nopad">
                 <a href="gallery/<?= $name; ?>/<?= $image_front; ?>" data-toggle="lightbox"
                    data-gallery="example-gallery">
                     <img src="thumb.php?src=gallery/<?= $name; ?>/<?= $image_front; ?>" class="img-fluid" style="width: 100%;">
                 </a>
             </div>
-            <div class="col-lg-10 col-md-9 col-sm-8 nopad">
+            <div class="col-lg-10 col-md-9 col-sm-9 nopad">
 		<div class="gallery_scroll">
 		<nobr>
                 <?php
