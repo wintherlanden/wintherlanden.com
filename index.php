@@ -34,10 +34,17 @@ $nolayout = ($_GET['nolayout'] ?? 0) ? 1 : 0;
 
 require_once('head.inc.php');
 
+?>
+<div class="<?=$page;?>">
+<?php
+
 if (file_exists($page . '.' . $lang . '.phtml'))
     require_once($page . '.' . $lang . '.phtml');
 elseif (file_exists($page . '.phtml'))
     require_once($page . '.phtml');
 
+?>
+</div>
+<?php
 
 require_once('foot.inc.php');
