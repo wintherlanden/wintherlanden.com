@@ -30,6 +30,8 @@ $categories = [
 
     .gallery .row {
         margin-bottom: 18px;
+        background: url(images/verlauf.png);
+        background-size: 100%;
     }
 
     .nopad {
@@ -71,6 +73,7 @@ $categories = [
                 </a>
             </div>
             <div class="col-sm-10 nopad">
+		<div class="gallery_scroll">
                 <?php
                 foreach ($images_gallery as $image) {
                     ?>
@@ -81,6 +84,7 @@ $categories = [
                     <?php
                 }
                 ?>
+		</div>
             </div>
 
         </div>
