@@ -58,6 +58,13 @@ if (!$nolayout) {
             });
         });
 
+
+    $('.pfeil').click(function () {
+console.log(this);
+        $(this).closest('.gallery_scroll').animate({ scrollLeft: '+=200'  }, 5000);
+    });
+
+
     </script>
 
 
