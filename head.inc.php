@@ -303,10 +303,10 @@ if (!$nolayout) {
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item <?= ($page == "home" ? "active" : ""); ?>">
-                    <a class="nav-link" href="?home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="?home"><?=($lang == "de" ? "Startseite" : "Home");?> <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item <?= ($page == "biography" ? "active" : ""); ?>">
-                    <a class="nav-link" href="?biography">Biography</a>
+                    <a class="nav-link" href="?biography"><?=($lang == "de" ? "Biografie" : "Biography");?></a>
                 </li>
                 <li class="nav-item <?= ($page == "gallery" ? "active" : ""); ?>">
                     <a class="nav-link" href="?gallery">Gallery</a>
