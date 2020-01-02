@@ -127,4 +127,15 @@ $categories = [
     ?>
 
 
+<script>
+$(function () {
+
+    $('.pfeil').click(function () {
+        $(this).closest('.gallery_scroll').animate({ scrollLeft: '+=200'  }, 5000);
+    });
+
+});
+
+</script>
+
 </div>
