@@ -69,6 +69,8 @@ if (!$nolayout) {
     });
     $('.gallery_scroll').scroll(function (e) {
         var $scrollview = $(this);
+        var min = 0;
+        var max = $scrollview.find('nobr').width() - $scrollview.width() - 2;
         console.log($scrollview.scrollLeft());
     });
 
